@@ -1,0 +1,68 @@
+$navbar-height: 75px;
+
+.container {
+  transition: background-color 750ms ease;
+  padding-top: $navbar-height;
+}
+
+.layoutContainer {
+  width: 100%;
+  padding: 2rem 0;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  // outline: 1px solid white;
+}
+
+.layoutTitle {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.titleUnderscore {
+  outline: 1px solid;
+  margin: 0.5rem 0 2rem 0;
+  width: 75px;
+}
+
+.layoutContent {
+  // margin: 1rem 0;
+  outline: 2px solid;
+  width: clamp(325px, 85%, 950px);
+  padding: 1.5rem 2rem;
+}
+
+.navbar {
+  height: $navbar-height;
+  width: 100%;
+  transition: background-color 750ms ease;
+  outline: 2px solid;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+}
+
+.introContainer {
+  h5 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+
+    span {
+      font-weight: 300;
+    }
+  }
+  p {
+    margin: 1rem 0;
+  }
+}
+
+
+.footer {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
