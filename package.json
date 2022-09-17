@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/sharp-solid-svg-icons": "^6.2.0",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-random-reveal": "^2.0.0",
+    "react-switch": "^7.0.0",
     "sass": "^1.54.9"
   },
   "devDependencies": {
