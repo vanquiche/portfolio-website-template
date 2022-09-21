@@ -1,20 +1,25 @@
-import { MutableRefObject, useState, useEffect } from 'react';
+import { MutableRefObject, useState, useEffect, useRef } from 'react';
 
-const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>) => {
+const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>, threshold?: number) => {
   const [isVisible, setIsVisible] = useState(false);
+  const hasRender = useRef(false)
+
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5,
+    threshold: threshold || 0.5,
   };
   function entryCallback(entries: IntersectionObserverEntry[]) {
     const [entry] = entries;
     setIsVisible(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      hasRender.current = true;
+    }
   }
 
   useEffect(() => {
     const observer = new IntersectionObserver(entryCallback, options);
-    if (ref && ref.current) observer.observe(ref.current);
+    if (ref && ref.current) observer.observe(ref.current)
     return () => {
       if (ref && ref.current) observer.unobserve(ref.current);
     };
@@ -22,6 +27,7 @@ const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>) => {
 
   return {
     isVisible,
+    hasRender
   };
 };
 
