@@ -35,7 +35,7 @@ const Navbar = ({ links }: Props) => {
     });
   };
 
-  const getIcon = (path: string) => {
+  function getIcon(path: string) {
     const location = path.replace('#', '');
     switch (location) {
       case 'intro':
@@ -47,23 +47,29 @@ const Navbar = ({ links }: Props) => {
       case 'contact':
         return faMessages;
     }
-  };
+  }
 
   return (
     <header>
-      <nav className={styles.navbar} style={themeStyle}>
+      <nav
+        className={styles.navbar}
+        style={themeStyle}
+        aria-labelledby='primary-navigation'
+      >
         {links.map((l, i) => {
           return (
             <span className={styles.linkContainer} key={i}>
               <NavDotTracker
                 visible={l.path === `#${location}`}
                 color={themeStyle.color}
+                aria-hidden={true}
               />
-              <a href='' onClick={handleClick(l.path)}>
+              <a href='' onClick={handleClick(l.path)} aria-labelledby={l.name}>
                 <FontAwesomeIcon
                   icon={getIcon(l.path) as any}
                   className={styles.link}
                   title={`navigate to ${l.name}`}
+                  // size='2x'
                 />
               </a>
             </span>

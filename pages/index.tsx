@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import { useMemo, useState } from 'react';
 import Intro from '../components/Intro';
 import Navbar from '../components/Navbar';
@@ -39,12 +38,12 @@ const Home: NextPage = () => {
     if (theme === ThemeOptions.Dark) {
       return {
         color: '#6EDB93',
-        backgroundColor: '#1E1E1E',
+        backgroundColor: '#202c39',
       };
     } else {
       return {
         color: '#293241',
-        backgroundColor: '#edede9',
+        backgroundColor: '#f0efeb',
       };
     }
   }, [theme]);

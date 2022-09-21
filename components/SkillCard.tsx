@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import React, { useRef } from 'react';
+import React, { ReactElement, useRef } from 'react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import styles from '../styles/styles.module.scss';
 
 type Item = {
-  icon?: string;
+  icon?: ReactElement;
   text: string;
 };
 
@@ -16,9 +16,7 @@ interface Props {
 
 const SkillCard = ({ items, title, itemHeight }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { isVisible } = useIntersectionObserver(ref);
-
-  const imageSize = itemHeight - 20;
+  const { isVisible, hasRender } = useIntersectionObserver(ref, 0.25);
 
   const containerHeight = {
     height: itemHeight * items.length,
@@ -26,7 +24,11 @@ const SkillCard = ({ items, title, itemHeight }: Props) => {
 
   const itemPosition = (i: number) => {
     return {
-      top: isVisible ? itemHeight * i : -itemHeight,
+      top: isVisible
+        ? itemHeight * i
+        : hasRender.current
+        ? itemHeight * i
+        : -itemHeight,
       height: itemHeight,
     };
   };
@@ -42,12 +44,10 @@ const SkillCard = ({ items, title, itemHeight }: Props) => {
         {items.map((x, i) => {
           return (
             <div key={i} style={itemPosition(i)} className={styles.skillItem}>
-              {/* <Image src='https://via.placeholder.com/50' height={imageSize} width={imageSize}/> */}
-              <img
-                src={`https://via.placeholder.com/${imageSize}`}
-                alt='placeholder'
-              />
-              <span className={styles.skillItemText}>{x.text}</span>
+              {x.icon ? x.icon : null}
+              <div className={styles.skillItemTextWrapper}>
+                <span className={styles.skillItemText}>{x.text}</span>
+              </div>
             </div>
           );
         })}

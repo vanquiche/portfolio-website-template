@@ -8,14 +8,9 @@ interface Props {
 }
 const ShuffleTitle = ({ title }: Props) => {
   const [hyrdrated, setHydrated] = useState(false);
-  const ref = useRef<HTMLSpanElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const { isVisible } = useIntersectionObserver(ref);
-  const revealKey = useRef(Math.random().toString());
-
-  // function resetKey() {
-  //   revealKey.current = Math.random().toString();
-  // }
 
   useEffect(() => {
     setHydrated(true);
@@ -24,15 +19,16 @@ const ShuffleTitle = ({ title }: Props) => {
   if (!hyrdrated) return null;
 
   return (
-    <span ref={ref} className={styles.shuffleTitle}>
+    <div className={styles.titleContainer} ref={ref}>
       <RandomReveal
-        key={revealKey.current}
         duration={0.85}
         characters={title}
         isPlaying={isVisible}
-        // onComplete={resetKey}
+        aria-hidden={true}
       />
-    </span>
+
+      <span className={styles.titleUnderscore} />
+    </div>
   );
 };
 

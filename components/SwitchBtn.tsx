@@ -35,13 +35,24 @@ const SwitchBtn = ({ onChange, color }: Props) => {
         onChange={handleChange}
         checked={isChecked}
         uncheckedIcon={
-          <FontAwesomeIcon icon={faSunBright} style={sunStyle} color='black' title='light-mode' />
+          <FontAwesomeIcon
+            icon={faSunBright}
+            style={sunStyle}
+            color='black'
+            title='light-mode'
+          />
         }
         checkedIcon={
-          <FontAwesomeIcon icon={faMoon} style={moonStyle} color='white' title='dark-mode' />
+          <FontAwesomeIcon
+            icon={faMoon}
+            style={moonStyle}
+            color='white'
+            title='dark-mode'
+          />
         }
         onColor={color}
         offColor={color}
+        role='switch'
       />
     </label>
   );

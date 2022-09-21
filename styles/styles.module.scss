@@ -2,32 +2,35 @@ $navbar-height: 75px;
 $base-font-height: 1.1rem;
 
 .container {
-  transition: background-color 750ms ease;
-  padding-top: $navbar-height;
+  transition: background-color 750ms ease, color 750ms ease;
 }
 
 .layoutContainer {
   width: 100%;
   min-height: 100vh;
-  padding: 1rem 0;
+  padding: $navbar-height 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: $base-font-height;
-  scroll-margin: $navbar-height;
-  // padding-bottom: 1rem;
-  // outline: 1px solid white;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .titleUnderscore {
   outline: 1px solid;
-  margin: 0.5rem 0 2rem 0;
+  margin: 0.5rem 0;
+  margin-bottom: 2.5rem;
   width: 75px;
+  display: inline-block;
+  align-self: center;
 }
 
 .layoutContent {
-  // margin: 1rem 0;
   outline: 2px solid;
   width: clamp(325px, 90%, 1200px);
   padding: 1.5rem 2rem;
@@ -36,9 +39,7 @@ $base-font-height: 1.1rem;
 .navbar {
   height: $navbar-height;
   width: 100%;
-  // max-width: 600px;
   transition: background-color 750ms ease;
-  // outline: 2px solid;
   padding: 0 2rem;
   position: fixed;
   top: 0;
@@ -46,14 +47,12 @@ $base-font-height: 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 5vw;
+  gap: 0 4vw;
 }
 
 .linkContainer {
   display: flex;
-  // outline: 1px solid;
   align-items: center;
-  // width: 50px;
 }
 
 .navDotTracker {
@@ -66,38 +65,39 @@ $base-font-height: 1.1rem;
 }
 
 .link {
-  // font-size: $base-font-height;
-  // font-weight: 500;
   font-size: 30px;
 }
 
 .skillCardWrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem 0;
-  // justify-items: center;
-  // outline: 1px solid blue;
+  gap: 1rem 0.25rem;
 }
 
 .skillItemContainer {
   position: relative;
-  // outline: 1px solid red;
   overflow: hidden;
   width: 225px;
 }
 
 .skillItem {
   position: absolute;
-  // outline: '1px solid white';
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transition-delay: 1000ms;
-  transition: top 750ms ease;
+  transition: top 500ms ease-out;
+}
+
+.skillItemTextWrapper {
+  width: 75%;
+  padding-left: 20px;
 }
 
 .skillItemText {
-  margin-left: 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .skillTitle {
@@ -109,19 +109,126 @@ $base-font-height: 1.1rem;
   font-weight: 700;
 }
 
+.projectCardContainer {
+  display: relative;
+  overflow: hidden;
+  margin-bottom: 3.5rem;
+  height: 100%;
+}
+
+.projectCardTitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  z-index: 500;
+  margin-bottom: 0.5rem;
+
+}
+
+.projectCardDetails {
+  margin-bottom: 1rem;
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+.projectCardDetails > summary::after {
+  content: 'expand';
+}
+.projectCardDetails[open] > summary::after {
+  content: 'close';
+}
+.projectCardSummaryContainer {
+  transform-origin: top;
+  margin-top: 1rem;
+}
+
+.projectCardDetails[open] summary ~ * {
+  animation: expand 150ms ease-in-out;
+}
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.detailSummary {
+  display: block;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: inherit;
+  }
+}
+
+.projectCardImage {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.projectCardLinkContainer {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+
+  span {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+  }
+}
+
+.projectCardLink {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  width: 125px;
+  transition: background-color 150ms ease;
+  justify-content: center;
+}
+
+.projectCardLinkIcon {
+  margin-right: 0.55rem;
+}
+
+.tag {
+  color: black;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
 .introContainer {
   display: flex;
   flex-direction: column;
-  gap: 0 1rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
-  // outline: 1px solid red;
   img {
     height: 250px;
     width: 250px;
     margin-top: 1rem;
     border-radius: 50%;
-    // outline: 1px solid;
   }
 
   p {
@@ -131,6 +238,67 @@ $base-font-height: 1.1rem;
   p:last-child {
     margin-bottom: 0;
   }
+
+  strong {
+    font-size: 1.5rem  }
+}
+
+.emailCopyIcon {
+  display: none;
+  opacity: 0;
+  transition: opacity 400ms linear;
+  margin-left: 1rem;
+}
+
+.emailContainer {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 375px;
+  cursor: pointer;
+  transition: background-color 375ms ease-out, color 375ms ease-out;
+  order: 2;
+  align-self: center;
+  z-index: 500;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.emailContainer:hover {
+  .emailCopyIcon {
+    opacity: 1;
+  }
+}
+
+.clipboardMessage {
+  order: 1;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  z-index: 100;
+}
+
+.messageEmailWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 0 1rem;
+}
+
+.socialLinksTitle {
+  text-align: center;
+}
+
+.socialLinksContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0 1rem;
 }
 
 .footer {
@@ -139,7 +307,7 @@ $base-font-height: 1.1rem;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  // font-weight: 600;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -149,6 +317,16 @@ $base-font-height: 1.1rem;
   }
   .introContainer {
     flex-direction: row;
+  }
+  .emailContainer {
+    outline: 1px solid;
+    padding: 0.75rem;
+  }
+  .emailCopyIcon {
+    display: inline;
+  }
+  .skillItemText {
+    font-size: inherit;
   }
 }
 
