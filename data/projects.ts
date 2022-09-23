@@ -1,5 +1,6 @@
 import { ProjectCardType } from "../components/types";
 
+// add your project data here
 const projectData: ProjectCardType[] = [
   {
     title: 'Flip Flashcard',

@@ -20,6 +20,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-random-reveal": "^2.0.0",
+    "react-responsive": "^9.0.0",
     "react-switch": "^7.0.0",
     "sass": "^1.54.9"
   },

@@ -3,17 +3,11 @@ import styles from '../styles/styles.module.scss';
 import ThemeContext, { ThemeOptions } from '../contexts/ThemeContext';
 import NavDotTracker from './NavDotTracker';
 import NavLocationContext from '../contexts/NavLocationContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faMessages,
-  faRobot,
-  faCodeSimple,
-  faNote,
-} from '@fortawesome/sharp-solid-svg-icons';
 import SwitchBtn from './SwitchBtn';
+import { NavLinkType } from './types';
 
 interface Props {
-  links: { name: string; path: string }[];
+  links: NavLinkType[];
 }
 
 const Navbar = ({ links }: Props) => {
@@ -27,27 +21,12 @@ const Navbar = ({ links }: Props) => {
   const handleClick = (id: string) => (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
     const section = id.replace('#', '');
-    if (location === section) return;
     const el = document.getElementById(section);
     el?.scrollIntoView({
       block: 'start',
       behavior: 'smooth',
     });
   };
-
-  function getIcon(path: string) {
-    const location = path.replace('#', '');
-    switch (location) {
-      case 'intro':
-        return faRobot;
-      case 'skills':
-        return faCodeSimple;
-      case 'projects':
-        return faNote;
-      case 'contact':
-        return faMessages;
-    }
-  }
 
   return (
     <header>
@@ -64,13 +43,8 @@ const Navbar = ({ links }: Props) => {
                 color={themeStyle.color}
                 aria-hidden={true}
               />
-              <a href='' onClick={handleClick(l.path)} aria-labelledby={l.name}>
-                <FontAwesomeIcon
-                  icon={getIcon(l.path) as any}
-                  className={styles.link}
-                  title={`navigate to ${l.name}`}
-                  // size='2x'
-                />
+              <a href='' onClick={handleClick(l.path)} aria-label={l.name}>
+                {l.icon}
               </a>
             </span>
           );

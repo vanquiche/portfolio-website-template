@@ -18,14 +18,16 @@ const SwitchBtn = ({ onChange, color }: Props) => {
   }
 
   const sunStyle = {
-    paddingLeft: 5,
-    paddingTop: 5,
+    paddingLeft: 6,
+    // paddingTop: 5,
+    paddingBottom: 3,
     fontSize: 18,
   };
 
   const moonStyle = {
-    paddingLeft: 9,
-    paddingTop: 5,
+    paddingLeft: 7,
+    // paddingTop: 5,
+    paddingBottom: 3,
     fontSize: 18,
   };
 

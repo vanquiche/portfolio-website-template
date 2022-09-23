@@ -5,19 +5,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import Tags from './Tags';
 import { ProjectCardType } from './types';
-import ProjectLink from './ProjectLink';
+import ProgressBarContainer from './ProgressBarContainer';
+import { useMediaQuery } from 'react-responsive';
 
 interface Props {
   project: ProjectCardType;
 }
 
 const ProjectCard = ({ project }: Props) => {
+  const isMobile = useMediaQuery({ query: '(max-width: 675px)' });
+  const progressBarStyle = {
+    width: '125px',
+    justifyContent: 'center',
+    border: '1px solid',
+  };
+
   return (
     // container
     <article>
-        <h2 className={styles.projectCardTitle}>
-          {project.title.toUpperCase()}
-        </h2>
+      <h2 className={styles.projectCardTitle}>{project.title.toUpperCase()}</h2>
       <div className={styles.projectCardContainer}>
         {/* card */}
         <div className={styles.projectCard}>
@@ -32,7 +38,7 @@ const ProjectCard = ({ project }: Props) => {
           {/* description */}
           <h3>{project.summary}</h3>
           <details className={styles.projectCardDetails}>
-            <summary/>
+            <summary />
             <div
               className={styles.projectCardSummaryContainer}
               dangerouslySetInnerHTML={{ __html: project.description }}
@@ -42,22 +48,27 @@ const ProjectCard = ({ project }: Props) => {
           <div className={styles.projectCardLinkContainer}>
             {project.links.map((l, i) => {
               return (
-                <ProjectLink path={l.path} key={i}>
-                  <>
+                <ProgressBarContainer
+                  key={i}
+                  containerStyle={progressBarStyle}
+                  animateTo='100%'
+                  fixed={isMobile}
+                >
+                  <a href={l.path}>
                     <FontAwesomeIcon
                       icon={l.name === 'demo' ? faDesktop : faCodeBranch}
                       className={styles.projectCardLinkIcon}
                     />
                     {l.name}
-                  </>
-                </ProjectLink>
+                  </a>
+                </ProgressBarContainer>
               );
             })}
           </div>
           {/* link container */}
           <div className={styles.projectCardLinkContainer}>
-            {project.tags.map((p) => (
-              <Tags tag={p} />
+            {project.tags.map((p, i) => (
+              <Tags tag={p} key={i} />
             ))}
           </div>
         </div>

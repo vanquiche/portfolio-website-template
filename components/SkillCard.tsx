@@ -1,11 +1,12 @@
-import Image from 'next/image';
 import React, { ReactElement, useRef } from 'react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import styles from '../styles/styles.module.scss';
+import ProgressBarContainer from './ProgressBarContainer';
 
 type Item = {
   icon?: ReactElement;
   text: string;
+  skillLevel: string;
 };
 
 interface Props {
@@ -20,6 +21,11 @@ const SkillCard = ({ items, title, itemHeight }: Props) => {
 
   const containerHeight = {
     height: itemHeight * items.length,
+  };
+
+  const progressBarStyle: React.CSSProperties = {
+    border: '1px solid',
+    paddingLeft: '10px',
   };
 
   const itemPosition = (i: number) => {
@@ -46,7 +52,14 @@ const SkillCard = ({ items, title, itemHeight }: Props) => {
             <div key={i} style={itemPosition(i)} className={styles.skillItem}>
               {x.icon ? x.icon : null}
               <div className={styles.skillItemTextWrapper}>
-                <span className={styles.skillItemText}>{x.text}</span>
+                <ProgressBarContainer
+                  animateTo={x.skillLevel}
+                  containerStyle={progressBarStyle}
+                  fixed={isVisible || hasRender.current}
+                  delay='800ms'
+                >
+                  <span className={styles.skillItemText}>{x.text}</span>
+                </ProgressBarContainer>
               </div>
             </div>
           );

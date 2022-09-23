@@ -7,11 +7,11 @@ interface Props {
 }
 
 const NavDotTracker = ({ visible, color }: Props) => {
-  const bgColor = {
+  const bgColor: React.CSSProperties = {
     backgroundColor: color,
   };
 
-  const visibility = {
+  const visibility: React.CSSProperties = {
     opacity: visible ? 1 : 0,
   };
 

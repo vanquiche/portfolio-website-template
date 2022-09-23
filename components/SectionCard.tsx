@@ -19,7 +19,7 @@ const SectionCard = ({ id, title, children }: Props) => {
     if (isVisible) {
       setLocation(id);
     }
-  }, [isVisible]);
+  }, [isVisible, id, setLocation]);
 
   return (
     <section
