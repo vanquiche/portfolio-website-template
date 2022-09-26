@@ -17,17 +17,17 @@ const SwitchBtn = ({ onChange, color }: Props) => {
     onChange(checked);
   }
 
-  const sunStyle = {
-    paddingLeft: 6,
-    // paddingTop: 5,
-    paddingBottom: 3,
+  const sunStyle: React.CSSProperties = {
+    position: 'absolute',
+    top: 5,
+    right: 5,
     fontSize: 18,
   };
 
-  const moonStyle = {
-    paddingLeft: 7,
-    // paddingTop: 5,
-    paddingBottom: 3,
+  const moonStyle: React.CSSProperties = {
+    position: 'absolute',
+    top: 5,
+    left: 5,
     fontSize: 18,
   };
 

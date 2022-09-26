@@ -32,7 +32,8 @@ const Intro = () => {
             and I like to build cool things for the web. <b>Javascript</b>,{' '}
             <b>React</b>, and eating <b>cheeseburgers</b> are kinda my thing and
             I think I do them pretty well. In my work, I strive toward stunning
-            designs with an emphasis on aesthetics and user-experience. 💬.
+            designs with an emphasis on <b>aesthetics</b>, <b>performance</b>,
+            and <b>user experience</b>. 💬.
           </p>
           Did I just pique your interest? Let&apos;s{' '}
           <a onClick={scrollToContact}>

@@ -15,7 +15,7 @@ const CustomIcon = ({ path, size }: Props) => {
     WebkitMask: `url('${path}') center/contain`,
     height: size + 'px',
     width: size + 'px',
-    transition: 'background 750ms ease',
+    // transition: 'background 750ms ease',
   };
 
   return <div style={style} aria-hidden={true} />;
