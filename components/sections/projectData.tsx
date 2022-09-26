@@ -29,8 +29,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CustomIcon from '@components/CustomIcon';
 import Image from 'next/image';
-// styles
-import styles from '@styles/styles.module.scss';
 
 //
 // THEMES
@@ -60,7 +58,6 @@ export const links: NavLinkType[] = [
     icon: (
       <FontAwesomeIcon
         icon={faRobot}
-        className={styles.link}
         title='scroll to section: intro'
         size='lg'
       />
@@ -72,7 +69,6 @@ export const links: NavLinkType[] = [
     icon: (
       <FontAwesomeIcon
         icon={faCodeSimple}
-        className={styles.link}
         title='scroll to section: software'
         size='lg'
       />
@@ -84,7 +80,6 @@ export const links: NavLinkType[] = [
     icon: (
       <FontAwesomeIcon
         icon={faNote}
-        className={styles.link}
         title='scroll to section: projects'
         size='lg'
       />
@@ -96,7 +91,6 @@ export const links: NavLinkType[] = [
     icon: (
       <FontAwesomeIcon
         icon={faMessages}
-        className={styles.link}
         title='scroll to section: contact'
         size='lg'
       />

@@ -1,0 +1,20 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.layoutContainer
+  width: 100%
+  min-height: 100vh
+  padding: $navbar-height 0
+  font-size: $base-text
+  @extend .flex-column
+  @extend .center-flex-item
+
+.shuffleTitle
+  font-size: $heading-title
+  font-weight: $bold-heading
+  min-height: 70px
+
+.layoutContent
+  outline: 2px solid
+  width: clamp(325px, 90%, 1200px)
+  padding: 1.5rem 2rem

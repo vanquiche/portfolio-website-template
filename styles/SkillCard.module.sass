@@ -1,0 +1,52 @@
+
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.skillContainer
+  p
+    margin-bottom: 0
+
+// .skillCardWrapper
+//   display: grid
+//   grid-template-columns: 1fr
+//   gap: 1rem 0.25rem
+//   outline: 1px solid border-left
+//   background-color: blue
+//   @media (min-width: 500px)
+//     grid-template-columns: repeat(2, 1fr)
+//     justify-items: center
+//   @media (min-width: 750px)
+//     grid-template-columns: repeat(3, 1fr)
+//     justify-items: center
+
+.skillItemContainer
+  position: relative
+  overflow: hidden
+  width: 225px
+
+.skillItem
+  position: absolute
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  margin-right: 10px
+  transition: top $reveal-transition
+  transition-delay: 250ms
+  @extend .flex-row
+  @media screen and (min-width: 500px)
+    .skillItemText
+      font-size: inherit
+
+.skillItemTextWrapper
+  width: 75%
+
+.skillItemText
+  text-align: center
+  font-size: 1rem
+
+.skillTitle
+  text-align: center
+
+
+
+

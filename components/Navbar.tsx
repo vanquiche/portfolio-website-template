@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import NavDotTracker from '@components/NavDotTracker';
 import SwitchBtn from '@components/SwitchBtn';
 // styles
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/Navbar.module.sass';
 // contexts
 import ThemeContext, { ThemeOptions } from '../contexts/ThemeContext';
 import NavLocationContext from '../contexts/NavLocationContext';

@@ -1,7 +1,7 @@
 import React, { ReactElement, useContext, useEffect, useRef } from 'react';
 import NavLocationContext from '@contexts/NavLocationContext';
 import useIntersectionObserver from '@hooks/useIntersectionObserver';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/SectionCard.module.sass';
 import ShuffleTitle from '@components/ShuffleTitle';
 
 interface Props {

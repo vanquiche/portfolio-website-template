@@ -13,9 +13,6 @@ import Projects from '@components/sections/Projects';
 import Contact from '@components/sections/Contact';
 import Footer from '@components/Footer';
 
-// styles
-import styles from '@styles/styles.module.scss';
-
 const Home: NextPage = () => {
   const [theme, setTheme] = useState(ThemeOptions.Dark);
   const [location, setLocation] = useState('');
@@ -27,7 +24,7 @@ const Home: NextPage = () => {
   return (
     <ThemeContext.Provider value={{ theme, setTheme, themeStyle }}>
       <NavLocationContext.Provider value={{ location, setLocation }}>
-        <div style={themeStyle} className={styles.container}>
+        <div style={themeStyle}>
           <Head>
             {/* change your meta information here */}
             <title>Steve Vang Dev</title>

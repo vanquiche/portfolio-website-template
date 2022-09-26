@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import SectionCard from '@components/SectionCard';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/Intro.module.sass';
 
 const Intro = () => {
   function scrollToContact(e: React.MouseEvent<HTMLAnchorElement>) {

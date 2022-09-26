@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/sharp-solid-svg-icons';
 import debounce from 'lodash.debounce';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/ClipCopy.module.sass';
 
 interface Props {
   copy: string;

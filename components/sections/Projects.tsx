@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '@components/ProjectCard';
 import SectionCard from '@components/SectionCard';
 import { projectData } from '@components/sections/projectData';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/Project.module.sass';
 
 const Projects = () => {
   return (

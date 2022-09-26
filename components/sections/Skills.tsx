@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionCard from '@components/SectionCard';
 import SkillCard from '@components/SkillCard';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/Skills.module.sass';
 import { skillcard_Languages, skillcard_Styles, skillcard_Frameworks } from '@components/sections/projectData'
 
 const Skills = () => {

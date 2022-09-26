@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import SectionCard from '@components/SectionCard';
-import styles from '@styles/styles.module.scss';
 import ThemeContext from '@contexts/ThemeContext';
 import { socialLinks } from '@components/sections/projectData';
 import ClipCopy from '@components/ClipCopy';
+// styles
+import styles from '@styles/Contact.module.sass';
 
 const Contact = () => {
   const { themeStyle } = useContext(ThemeContext);

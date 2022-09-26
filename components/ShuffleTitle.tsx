@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import useIntersectionObserver from '@hooks/useIntersectionObserver';
 import { RandomReveal } from 'react-random-reveal';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/ShuffleTitle.module.sass';
 
 interface Props {
   title: string;

@@ -1,6 +1,6 @@
 import React, { ReactElement, useRef } from 'react';
 import useIntersectionObserver from '@hooks/useIntersectionObserver';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/SkillCard.module.sass';
 import ProgressBarContainer from '@components/ProgressBarContainer';
 
 type Item = {

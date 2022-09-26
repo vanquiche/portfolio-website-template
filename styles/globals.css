@@ -9,6 +9,7 @@ body {
   /* font-size: large; */
   line-height: 1.65rem;
   overflow-x: hidden;
+  font-size: 0.9rem;
 }
 
 a {
@@ -33,6 +34,6 @@ small {
 @media screen and (min-width: 500px) {
   html,
   body {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }

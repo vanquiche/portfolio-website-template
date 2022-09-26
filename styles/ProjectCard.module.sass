@@ -1,0 +1,86 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.projectCardContainer
+  display: relative
+  overflow: hidden
+  margin-bottom: 3.5rem
+  height: 100%
+
+.projectCardTitle
+  font-size: $subheading-title
+  font-weight: $bold-subheading
+  text-align: center
+  margin-bottom: 0.5rem
+
+.projectCardDetails
+  margin-bottom: 1rem
+  summary
+    font-weight: $bold-text
+    @extend .active-link
+
+.projectCardDetails > summary::after
+  content: 'expand'
+.projectCardDetails[open] > summary::after
+  content: 'close'
+.projectCardSummaryContainer
+  transform-origin: top
+  margin-top: 1rem
+
+.projectCardDetails[open] summary ~ *
+  animation: expand $interact-transition
+
+@keyframes expand
+  0%
+    transform: scaleY(0)
+  100%
+    transform: scaleY(1)
+
+
+.detailSummary
+  display: block
+  margin-top: 0.5rem
+  @extend .active-link
+
+.projectCard
+  @extend .flex-column
+  h3
+    font-weight: $bold-text
+    margin: 1rem 0
+    font-size: inherit
+  h4
+    margin: 1rem 0
+
+
+.projectCardImage
+  width: 100%
+  height: auto
+  max-height: 250px
+  object-fit: cover
+
+.projectCardLinkContainer
+  display: flex
+  width: 100%
+  gap: 0.5rem
+  margin: 0.5rem 0
+
+.tagsContainer
+  display: flex
+  width: 100%
+  gap: 0.5rem
+  margin: 0.5rem 0
+  flex-wrap: wrap
+
+.projectCardLink
+  width: 100px
+  transition: background-color $interact-transition
+  @extend .flex-column
+  @extend .center-flex-item
+
+.projectCardLinkIcon
+  margin-right: 0.55rem
+
+@media screen and (min-width: 500px)
+  .projectCardLink
+    width: 135px
+

@@ -10,7 +10,7 @@ import ProgressBarContainer from '@components/ProgressBarContainer';
 import { ProjectCardType } from '@components/types';
 import { useMediaQuery } from 'react-responsive';
 // styles
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/ProjectCard.module.sass';
 
 interface Props {
   project: ProjectCardType;

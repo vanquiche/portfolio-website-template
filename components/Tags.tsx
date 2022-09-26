@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@styles/styles.module.scss';
+import styles from '@styles/Tags.module.sass';
 import FontColorContrast from 'font-color-contrast'
 
 interface Props {

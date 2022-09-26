@@ -1,0 +1,25 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.navbar
+  height: $navbar-height
+  width: 100%
+  font-size: 1.3rem
+  transition: background-color $theme-transition
+  padding: 0 2rem
+  position: fixed
+  top: 0
+  gap: 0 4vw
+  @extend .flex-row
+  @extend .center-flex-item
+  @extend .layer-top-most
+
+.linkContainer
+  @extend .flex-row
+  @extend .center-flex-item
+
+.link
+  transition: transform $interact-transition
+
+.link:hover
+  transform: scale(1.15)

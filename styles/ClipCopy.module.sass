@@ -1,0 +1,73 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.emailCopyIcon
+  display: none
+  opacity: 0
+  transition: opacity $interact-transition
+  margin-left: 1rem
+  @extend .layer-middle
+  @media screen and (min-width: 500px)
+    display: inline
+
+.fillbar
+  position: absolute
+  left: 0
+  top: 0
+  width: 0
+  height: 100%
+  transition: width $interact-transition
+  transform-origin: left
+  @extend .layer-bottom
+
+.emailContainer
+  position: relative
+  font-size: 0.95rem
+  font-weight: $bold-text
+  padding: 0.5rem 0
+  width: 100%
+  max-width: 375px
+  outline: 1px solid
+  order: 2
+  align-self: center
+  border: none
+  background-color: transparent
+  color: inherit
+  @extend .flex-row
+  @extend .center-flex-item
+  @extend .active-link
+  @extend .layer-middle
+  @media screen and (min-width: 500px)
+    font-size: $base-text
+    padding: 0.75rem
+
+.emailContainer:hover
+  .emailCopyIcon
+    opacity: 1
+  .fillbar
+    width: 100%
+
+.clipboardMessage
+  order: 1
+  text-align: center
+  margin: 0
+  z-index: 100
+
+.messageEmailWrapper
+  gap: 0 1rem
+  @extend .flex-column
+  @extend .center-flex-item
+
+.email
+  @extend .layer-middle
+
+// @media screen and (min-width: 500px)
+//   .emailContainer
+//     font-size: $base-text
+//     padding: 0.75rem
+//   .emailCopyIcon
+//     display: inline
+
+
+
+

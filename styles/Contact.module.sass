@@ -1,0 +1,19 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.articleDescription
+  @extend .center-text
+
+.socialLinksTitle
+  text-align: center
+
+.socialLinksContainer
+  width: 100%
+  gap: 0 1rem
+  @extend .flex-row
+  @extend .center-flex-item
+
+.link
+  transition: transform $interact-transition
+  &:hover
+    transform: scale(1.15)
