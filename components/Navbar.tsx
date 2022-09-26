@@ -1,10 +1,13 @@
 import React, { useContext } from 'react';
-import styles from '../styles/styles.module.scss';
+import NavDotTracker from '@components/NavDotTracker';
+import SwitchBtn from '@components/SwitchBtn';
+// styles
+import styles from '@styles/styles.module.scss';
+// contexts
 import ThemeContext, { ThemeOptions } from '../contexts/ThemeContext';
-import NavDotTracker from './NavDotTracker';
 import NavLocationContext from '../contexts/NavLocationContext';
-import SwitchBtn from './SwitchBtn';
-import { NavLinkType } from './types';
+// types
+import { NavLinkType } from '@components/types';
 
 interface Props {
   links: NavLinkType[];

@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/sharp-solid-svg-icons';
 import debounce from 'lodash.debounce';
-import styles from '../styles/styles.module.scss';
+import styles from '@styles/styles.module.scss';
 
 interface Props {
   copy: string;
@@ -19,7 +19,7 @@ const ClipCopy = ({ copy, theme }: Props) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
-  // debounce to limit user spamming copy button
+  // debounce to limit user from spamming copy button
   const hideMessage = debounce(() => {
     setMessageOpacity(0);
   }, 4000);

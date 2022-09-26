@@ -1,6 +1,6 @@
 import React, { useRef, useContext, ReactElement } from 'react';
-import ThemeContext from '../contexts/ThemeContext';
-import styles from '../styles/styles.module.scss'
+import ThemeContext from '@contexts/ThemeContext';
+import styles from '@styles/styles.module.scss'
 
 const ProjectLink = ({ children, path }: { children: ReactElement, path: string }) => {
   const linkRef = useRef<HTMLAnchorElement>(null);

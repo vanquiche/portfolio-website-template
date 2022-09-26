@@ -1,7 +1,7 @@
 import React, { ReactElement, useRef } from 'react';
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
-import styles from '../styles/styles.module.scss';
-import ProgressBarContainer from './ProgressBarContainer';
+import useIntersectionObserver from '@hooks/useIntersectionObserver';
+import styles from '@styles/styles.module.scss';
+import ProgressBarContainer from '@components/ProgressBarContainer';
 
 type Item = {
   icon?: ReactElement;

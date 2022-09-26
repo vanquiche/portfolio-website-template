@@ -1,34 +1,27 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useMemo, useState } from 'react';
-import Intro from '../components/sections/Intro';
-import Navbar from '../components/Navbar';
-import ThemeContext, { ThemeOptions } from '../contexts/ThemeContext';
-import Skills from '../components/sections/Skills';
-import styles from '../styles/styles.module.scss';
-import Projects from '../components/sections/Projects';
-import Contact from '../components/sections/Contact';
-import Footer from '../components/Footer';
-import NavLocationContext from '../contexts/NavLocationContext';
-import links from '../data/navigation';
+import ThemeContext, { ThemeOptions } from '@contexts/ThemeContext';
+import NavLocationContext from '@contexts/NavLocationContext';
+import { lightTheme, darkTheme, links } from '../components/sections/projectData';
+
+// components
+import Intro from '@components/sections/Intro';
+import Navbar from '@components/Navbar';
+import Skills from '@components/sections/Skills';
+import Projects from '@components/sections/Projects';
+import Contact from '@components/sections/Contact';
+import Footer from '@components/Footer';
+
+// styles
+import styles from '@styles/styles.module.scss';
 
 const Home: NextPage = () => {
   const [theme, setTheme] = useState(ThemeOptions.Dark);
   const [location, setLocation] = useState('');
 
-  // change your theme styles here
   const themeStyle = useMemo(() => {
-    if (theme === ThemeOptions.Dark) {
-      return {
-        color: '#6EDB93',
-        backgroundColor: '#0b132b',
-      };
-    } else {
-      return {
-        color: '#293241',
-        backgroundColor: '#f0efeb',
-      };
-    }
+    return theme === ThemeOptions.Dark ? darkTheme : lightTheme;
   }, [theme]);
 
   return (

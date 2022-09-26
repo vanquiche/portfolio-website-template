@@ -1,23 +1,24 @@
 import React from 'react';
-import SectionCard from '../SectionCard';
-import SkillCard from '../SkillCard';
-import styles from '../../styles/styles.module.scss';
-import { languages, styling, frameworks } from '../../data/skillcards';
+import SectionCard from '@components/SectionCard';
+import SkillCard from '@components/SkillCard';
+import styles from '@styles/styles.module.scss';
+import { skillcard_Languages, skillcard_Styles, skillcard_Frameworks } from '@components/sections/projectData'
 
 const Skills = () => {
   return (
     // change your title and section id
     <SectionCard id='skills' title='$OFTWARE'>
       <article className={styles.skillContainer}>
-        <p>
+        <p className={styles.articleDescription}>
           {/* add your description */}
-          I&apos;m always learning new tools and skills, but here are some of
-          the technologies that I enjoy and currently use.
+          I&apos;m always learning new tools and skills to add to my <strong>Frontend</strong> repertoire,<br />but here are some of
+          the technologies that I&apos;m currently using.
         </p>
         <div className={styles.skillCardWrapper}>
-          <SkillCard items={languages} itemHeight={85} />
-          <SkillCard items={styling} itemHeight={85} />
-          <SkillCard items={frameworks} itemHeight={85} />
+          {/* add your skillcards here with their respective item. itemHeight represents the height of the container, required for proper position  */}
+          <SkillCard items={skillcard_Languages} itemHeight={85} />
+          <SkillCard items={skillcard_Styles} itemHeight={85} />
+          <SkillCard items={skillcard_Frameworks} itemHeight={85} />
         </div>
       </article>
     </SectionCard>

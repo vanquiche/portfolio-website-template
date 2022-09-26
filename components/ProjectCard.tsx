@@ -1,12 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from '../styles/styles.module.scss';
+// icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-import Tags from './Tags';
-import { ProjectCardType } from './types';
-import ProgressBarContainer from './ProgressBarContainer';
+// components
+import Tags from '@components/Tags';
+import ProgressBarContainer from '@components/ProgressBarContainer';
+// types
+import { ProjectCardType } from '@components/types';
 import { useMediaQuery } from 'react-responsive';
+// styles
+import styles from '@styles/styles.module.scss';
 
 interface Props {
   project: ProjectCardType;
@@ -39,10 +43,9 @@ const ProjectCard = ({ project }: Props) => {
           <h3>{project.summary}</h3>
           <details className={styles.projectCardDetails}>
             <summary />
-            <div
-              className={styles.projectCardSummaryContainer}
-              dangerouslySetInnerHTML={{ __html: project.description }}
-            />
+            <div className={styles.projectCardSummaryContainer}>
+            {project.description}
+            </div>
           </details>
 
           <div className={styles.projectCardLinkContainer}>
@@ -66,7 +69,7 @@ const ProjectCard = ({ project }: Props) => {
             })}
           </div>
           {/* link container */}
-          <div className={styles.projectCardLinkContainer}>
+          <div className={styles.tagsContainer}>
             {project.tags.map((p, i) => (
               <Tags tag={p} key={i} />
             ))}

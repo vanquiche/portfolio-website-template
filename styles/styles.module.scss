@@ -8,7 +8,7 @@ $interact-transition: 200ms ease-out;
 // font sizes
 $heading-title: 2rem;
 $subheading-title: 1.7rem;
-$base-text: 1.2rem;
+$base-text: 1.1rem;
 $small-text: 0.95rem;
 $xsmall-text: 0.8rem;
 // font weights
@@ -80,12 +80,20 @@ $bold-heading: 800;
   cursor: pointer;
 }
 
+.center-text {
+  text-align: center;
+}
+
 //
 //
 //
 
 .container {
   transition: background-color $theme-transition, color $theme-transition;
+}
+
+.articleDescription {
+  @extend .center-text;
 }
 
 .layoutContainer {
@@ -178,7 +186,7 @@ $bold-heading: 800;
   margin-right: 10px;
   transition: top $reveal-transition;
   transition-delay: 250ms;
-  @extend .flex-row
+  @extend .flex-row;
 }
 
 .skillItemTextWrapper {
@@ -255,9 +263,13 @@ $bold-heading: 800;
   @extend .flex-column;
 
   h3 {
-    font-weight: $bold-subheading;
+    font-weight: $bold-text;
     margin: 1rem 0;
     font-size: inherit;
+  }
+
+  h4 {
+    margin: 1rem 0;
   }
 }
 
@@ -273,22 +285,30 @@ $bold-heading: 800;
   width: 100%;
   gap: 0.5rem;
   margin: 0.5rem 0;
-  margin-left: 10px;
+}
+
+.tagsContainer {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
   flex-wrap: wrap;
 }
 
 .projectCardLink {
-  // display: flex;
-  // align-items: center;
   width: 100px;
   transition: background-color $interact-transition;
-  // justify-content: center;
   @extend .flex-column;
   @extend .center-flex-item;
 }
 
 .projectCardLinkIcon {
   margin-right: 0.55rem;
+}
+
+.projectCardSummaryContainer {
+  // width: 100%;
+  // outline: 1px solid;
 }
 
 .tag {
@@ -396,11 +416,17 @@ $bold-heading: 800;
 }
 
 .footer {
-  height: 60px;
+  // height: 80px;
   margin-top: 1rem;
+  padding: 1rem 0;
   font-size: $small-text;
-  @extend .flex-row;
-  @extend .center-flex-item
+  text-align: center;
+  @extend .flex-column;
+  @extend .center-flex-item;
+
+  a {
+    font-weight: $bold-text;
+  }
 }
 
 .fillboxContainer {

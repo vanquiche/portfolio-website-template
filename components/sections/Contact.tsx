@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import SectionCard from '../SectionCard';
-import styles from '../../styles/styles.module.scss';
-import ThemeContext from '../../contexts/ThemeContext';
-import socialLinks from '../../data/social';
-import ClipCopy from '../ClipCopy';
+import SectionCard from '@components/SectionCard';
+import styles from '@styles/styles.module.scss';
+import ThemeContext from '@contexts/ThemeContext';
+import { socialLinks } from '@components/sections/projectData';
+import ClipCopy from '@components/ClipCopy';
 
 const Contact = () => {
   const { themeStyle } = useContext(ThemeContext);
@@ -12,10 +12,10 @@ const Contact = () => {
     // change your title and section id
     <SectionCard id='contact' title='CONTACT'>
       <article>
-        <p>
+        <p className={styles.articleDescription}>
           {/* change your contact description */}
           Looking for an awesome <b>Frontend Developer</b>? I&apos;m{' '}
-          <b>available</b> and looking to mingle! 😎 Hit me up and let&apos;s
+          <b>available</b> and looking to mingle! <br />Hit me up and let&apos;s
           see if we&apos;re a match. 💕
         </p>
         <ClipCopy copy='stevevang425@gmail.com' theme={themeStyle} />

@@ -5,7 +5,7 @@ export interface ProjectCardType {
   banner: string;
   bannerAlt: string;
   summary: string;
-  description: string;
+  description: ReactElement;
   tags: string[];
   links: { name: string; path: string }[];
 }
@@ -26,3 +26,4 @@ export interface SocialLinkType {
   icon: ReactElement;
   link: string;
 }
+

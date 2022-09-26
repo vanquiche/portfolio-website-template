@@ -1,7 +1,8 @@
 import React from 'react';
-import ProjectCard from '../ProjectCard';
-import SectionCard from '../SectionCard';
-import projectData from '../../data/projects';
+import ProjectCard from '@components/ProjectCard';
+import SectionCard from '@components/SectionCard';
+import { projectData } from '@components/sections/projectData';
+import styles from '@styles/styles.module.scss';
 
 const Projects = () => {
   return (
@@ -9,11 +10,9 @@ const Projects = () => {
     <SectionCard id='projects' title='{ PROJECTS }'>
       <div>
         {/* change your project description here */}
-        <p>
-          Consequat adipisicing ad do aute veniam. Pariatur est nostrud ipsum
-          ipsum culpa ex velit magna magna. Ad adipisicing duis cillum dolor.
-          Aliquip do minim eiusmod do sit excepteur adipisicing eiusmod aute
-          velit. Consequat commodo non adipisicing laboris.
+        <p className={styles.articleDescription}>
+          Here are some of my current greatest hits. Check it out and I hope you
+          enjoy them as much as I did creating them. 🥳
         </p>
         {projectData.map((p, i) => (
           <ProjectCard project={p} key={i} />

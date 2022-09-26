@@ -1,8 +1,8 @@
 import React, { ReactElement, useContext, useEffect, useRef } from 'react';
-import NavLocationContext from '../contexts/NavLocationContext';
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
-import styles from '../styles/styles.module.scss';
-import ShuffleTitle from './ShuffleTitle';
+import NavLocationContext from '@contexts/NavLocationContext';
+import useIntersectionObserver from '@hooks/useIntersectionObserver';
+import styles from '@styles/styles.module.scss';
+import ShuffleTitle from '@components/ShuffleTitle';
 
 interface Props {
   id: string;

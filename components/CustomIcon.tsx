@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import ThemeContext from '../contexts/ThemeContext';
+import ThemeContext from '@contexts/ThemeContext';
 // import Image from 'next/image';
 
 interface Props {

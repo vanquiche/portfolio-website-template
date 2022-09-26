@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import SectionCard from '../SectionCard';
-import styles from '../../styles/styles.module.scss';
+import SectionCard from '@components/SectionCard';
+import styles from '@styles/styles.module.scss';
 
 const Intro = () => {
   function scrollToContact(e: React.MouseEvent<HTMLAnchorElement>) {
@@ -32,14 +32,12 @@ const Intro = () => {
             and I like to build cool things for the web. <b>Javascript</b>,{' '}
             <b>React</b>, and eating <b>cheeseburgers</b> are kinda my thing and
             I think I do them pretty well. In my work, I strive toward stunning
-            designs with an emphasis on aesthetics and user-experience.
-            <br />
-            Did I just pique your interest? Let&apos;s{' '}
-            <a onClick={scrollToContact}>
-              <b>chat</b>
-            </a>{' '}
-            💬.
+            designs with an emphasis on aesthetics and user-experience. 💬.
           </p>
+          Did I just pique your interest? Let&apos;s{' '}
+          <a onClick={scrollToContact}>
+            <b>chat</b>
+          </a>{' '}
         </div>
       </section>
     </SectionCard>

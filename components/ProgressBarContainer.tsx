@@ -1,6 +1,6 @@
 import React, { ReactElement, useRef, useContext } from 'react';
-import styles from '../styles/styles.module.scss';
-import ThemeContext from '../contexts/ThemeContext';
+import styles from '@styles/styles.module.scss';
+import ThemeContext from '@contexts/ThemeContext';
 
 interface Props {
   children: ReactElement;
