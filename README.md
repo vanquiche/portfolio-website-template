@@ -49,17 +49,17 @@ npm run dev
 
 ## Design Philosophy
 
-As much as I love websites with bold designs, flashy transitions and scrolling animations, In my opinion, a portfolio website may not be the place for it (I’ve some animation to make this site to be dynamic without being distracting). What I've come to learn is that most people have short attention spans and are lazy. You’ll risk users skipping your content if your website is confusing or annoying to use. Some things that typically result in a bad user experience (aside from long load times, poor color schemes, and unintuitive navigation/layout) are:
+As much as I love websites with bold designs, flashy transitions and scrolling animations, In my opinion, a portfolio website may not be the place for it (I’ve added some animation to make this site dynamic without being distracting). What I've come to learn is that most people have short attention spans. You’ll risk users skipping your content if your website is confusing or annoying to use. Some things that typically result in a bad user experience (aside from long load times, poor color schemes, and unintuitive navigation/layout) are:
 
 - Scroll hijacking (for more info, click [here](https://alvarotrigo.com/blog/what-is-scroll-hijacking/))
 - Slow animation/transitions (anything over 1000ms)
 - Distracting animated backgrounds
 
-You can think of your portfolio website as an advert and the goal of any advert is conversion. In this context, our conversion goal is to convince any potential employer on your site to make contact, which hopefully leads to an interview, and ultimately a job.
+You can think of your portfolio website as an ad and the goal of any ad is conversion. In this context, our conversion goal is to convince any potential employer on your site to make contact, which hopefully leads to an interview, and ultimately a job.
 
 ## Accessibility
 
-Last but not least, I coded this project with accessibility very much in mind, however, I’m an advocate for accessibility but far from an expert. If you do use this template for your own project, I encourage you to continue to improve the accessibility where it is applicable.
+Last but not least, I coded this project with accessibility in mind, but I'm by no means an expert. If you use this template for your own project, I encourage you to continue to improve the accessibility where it is applicable.
 
 ## License
 
