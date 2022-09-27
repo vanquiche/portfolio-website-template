@@ -14,7 +14,7 @@ I created this for my own personal portfolio website. If you like what you see, 
 
 **Clone this repo**
 
-`git clone repolink`
+`git clone https://github.com/vanquiche/portfolio-website-template.git`
 
 **Install dependencies**
 
