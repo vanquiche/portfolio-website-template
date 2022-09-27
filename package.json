@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-website",
+  "name": "portfolio-website-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-medium-image-zoom": "^5.0.3",
     "react-random-reveal": "^2.0.0",
     "react-responsive": "^9.0.0",
     "react-switch": "^7.0.0",
