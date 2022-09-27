@@ -7,7 +7,7 @@ import styles from '@styles/Navbar.module.sass';
 import ThemeContext, { ThemeOptions } from '../contexts/ThemeContext';
 import NavLocationContext from '../contexts/NavLocationContext';
 // types
-import { NavLinkType } from '@components/types';
+import { NavLinkType } from 'types';
 
 interface Props {
   links: NavLinkType[];
@@ -46,7 +46,7 @@ const Navbar = ({ links }: Props) => {
                 color={themeStyle.color}
                 aria-hidden={true}
               />
-              <a href='' onClick={handleClick(l.path)} aria-label={l.name}>
+              <a href='' onClick={handleClick(l.path)} aria-label={l.name} className={styles.link}>
                 {l.icon}
               </a>
             </span>

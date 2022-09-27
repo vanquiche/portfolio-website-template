@@ -16,6 +16,9 @@
   min-height: 70px
 
 .layoutContent
-  outline: 2px solid
-  width: clamp(325px, 90%, 1200px)
+  // outline: 2px solid
+  width: 100%
   padding: 1.5rem 2rem
+  @media screen and (min-width: 500px)
+    width: clamp(325px, 90%, 1200px)
+

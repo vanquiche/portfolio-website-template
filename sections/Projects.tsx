@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from '@components/ProjectCard';
 import SectionCard from '@components/SectionCard';
-import { projectData } from '@components/sections/projectData';
+import { projectData } from '@sections/projectData';
 import styles from '@styles/Project.module.sass';
 
 const Projects = () => {

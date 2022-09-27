@@ -3,14 +3,14 @@ import Head from 'next/head';
 import { useMemo, useState } from 'react';
 import ThemeContext, { ThemeOptions } from '@contexts/ThemeContext';
 import NavLocationContext from '@contexts/NavLocationContext';
-import { lightTheme, darkTheme, links } from '../components/sections/projectData';
+import { lightTheme, darkTheme, links } from '@sections/projectData';
 
 // components
-import Intro from '@components/sections/Intro';
+import Intro from '@sections/Intro';
 import Navbar from '@components/Navbar';
-import Skills from '@components/sections/Skills';
-import Projects from '@components/sections/Projects';
-import Contact from '@components/sections/Contact';
+import Skills from '@sections/Skills';
+import Projects from '@sections/Projects';
+import Contact from '@sections/Contact';
 import Footer from '@components/Footer';
 
 const Home: NextPage = () => {
@@ -32,13 +32,15 @@ const Home: NextPage = () => {
             <link rel='icon' href='/favicon.ico' />
           </Head>
           <Navbar links={links} />
+
+          {/* add sections here */}
           <main>
-            {/* add sections here */}
             <Intro />
             <Skills />
             <Projects />
             <Contact />
           </main>
+
           <Footer />
         </div>
       </NavLocationContext.Provider>

@@ -27,17 +27,17 @@ const Intro = () => {
         <div>
           <p>
             {/* add your text here */}
-            👋 <b>Hello!</b> I&apos;m<strong> Steve, </strong>a
-            <strong> Frontend Developer </strong>
-            and I like to build cool things for the web. <b>Javascript</b>,{' '}
-            <b>React</b>, and eating <b>cheeseburgers</b> are kinda my thing and
-            I think I do them pretty well. In my work, I strive toward stunning
-            designs with an emphasis on <b>aesthetics</b>, <b>performance</b>,
-            and <b>user experience</b>. 💬.
+            <b>Hello!</b> My name is
+            <span className={styles.myName}> Steve Vang</span>{' '}
+            {/* <br /> */}
+            I&apos;m a<b> Frontend Developer </b>
+            and I build cool things for the web. <b>Javascript</b>, <b>React</b>
+            , and eating <b>cheeseburgers</b> are kinda my thing and I think I
+            do them pretty well.
           </p>
           Did I just pique your interest? Let&apos;s{' '}
           <a onClick={scrollToContact}>
-            <b>chat</b>
+            <b>chat 💬</b>
           </a>{' '}
         </div>
       </section>

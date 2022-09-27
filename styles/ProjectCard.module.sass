@@ -20,9 +20,9 @@
     @extend .active-link
 
 .projectCardDetails > summary::after
-  content: 'expand'
+  content: 'learn more'
 .projectCardDetails[open] > summary::after
-  content: 'close'
+  content: 'collapse'
 .projectCardSummaryContainer
   transform-origin: top
   margin-top: 1rem
@@ -51,6 +51,7 @@
   h4
     margin: 1rem 0
 
+.projectCardSummaryContainer
 
 .projectCardImage
   width: 100%

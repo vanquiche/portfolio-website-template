@@ -7,7 +7,7 @@ import { faDesktop, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import Tags from '@components/Tags';
 import ProgressBarContainer from '@components/ProgressBarContainer';
 // types
-import { ProjectCardType } from '@components/types';
+import { ProjectCardType } from 'types';
 import { useMediaQuery } from 'react-responsive';
 // styles
 import styles from '@styles/ProjectCard.module.sass';
@@ -34,19 +34,15 @@ const ProjectCard = ({ project }: Props) => {
           {/* banner */}
           <Image
             src={project.banner}
-            width={450}
-            height={450}
+            width={375}
+            height={300}
+            objectFit='cover'
+            // layout='responsive'
             className={styles.projectCardImage}
             alt={project.bannerAlt}
           />
           {/* description */}
           <h3>{project.summary}</h3>
-          <details className={styles.projectCardDetails}>
-            <summary />
-            <div className={styles.projectCardSummaryContainer}>
-            {project.description}
-            </div>
-          </details>
 
           <div className={styles.projectCardLinkContainer}>
             {project.links.map((l, i) => {
@@ -68,7 +64,15 @@ const ProjectCard = ({ project }: Props) => {
               );
             })}
           </div>
-          {/* link container */}
+
+          <details className={styles.projectCardDetails}>
+            <summary />
+            <div className={styles.projectCardSummaryContainer}>
+              {project.description}
+            </div>
+          </details>
+
+          {/* tags container */}
           <div className={styles.tagsContainer}>
             {project.tags.map((p, i) => (
               <Tags tag={p} key={i} />

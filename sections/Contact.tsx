@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import SectionCard from '@components/SectionCard';
 import ThemeContext from '@contexts/ThemeContext';
-import { socialLinks } from '@components/sections/projectData';
+import { socialLinks } from '@sections/projectData';
 import ClipCopy from '@components/ClipCopy';
 // styles
 import styles from '@styles/Contact.module.sass';
@@ -22,6 +22,7 @@ const Contact = () => {
         <ClipCopy copy='stevevang425@gmail.com' theme={themeStyle} />
         <p className={styles.socialLinksTitle}>Connect with me 🤖</p>
         <section className={styles.socialLinksContainer}>
+          {/* add your social information in the projectData.tsx file */}
           {socialLinks.map((s, i) => {
             return (
               <a

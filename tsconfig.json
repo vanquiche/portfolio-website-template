@@ -16,12 +16,14 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@hooks/*": ["hooks/*"],
+      "@public/*": ["public/*"],
       "@styles/*": ["styles/*"],
       "@contexts/*": ["contexts/*"],
-      "@components/*": ["components/*"],
-      "@hooks/*": ["hooks/*"]
+      "@sections/*": ["sections/*"],
+      "@components/*": ["components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }
