@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Template
+- add example images
+- add live site
+
+I created this for my own personal portfolio website. If you like what you see, you’re welcome to use this project as a template for your own website. This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
+
+- **SEO-friendly**: You get rich HTML with SSR
+- **Performance Optimization**: Images are lazy loaded, cached, and many other optimizing features!
+- **Easy Deploy**: If you choose to host with Vercel, there is no easier and faster way to get your site live
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+**Clone this repo**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`git clone repolink`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**install dependencies**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+`npm install`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**start development server**
 
-## Learn More
+`npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
+- Next.js
+- TypeScript
+- Sass CSS
+- FontAwesome Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design Philosophy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+As much as I love websites with bold designs, flashy transitions and scrolling animations, In my opinion, a portfolio website may not be the place for it (I’ve some animation to make this site to be dynamic without being distracting). What I've come to learn is that most people have short attention spans and are lazy. You’ll risk users skipping your content if your website is confusing or annoying to use. Some things that typically result in a bad user experience (aside from long load times, poor color schemes, and unintuitive navigation/layout) are:
 
-## Deploy on Vercel
+- Scroll hijacking (for more info, click [here](https://alvarotrigo.com/blog/what-is-scroll-hijacking/))
+- Slow animation/transitions (anything over 1000ms)
+- Distracting animated backgrounds
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can think of your portfolio website as an advert and the goal of any advert is conversion. In this context, our conversion goal is to convince any potential employer on your site to make contact, which hopefully leads to an interview, and ultimately a job.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Accessibility
+
+Last but not least, I coded this project with accessibility very much in mind, however, I’m an advocate for accessibility but far from an expert. If you do use this template for your own project, I encourage you to continue to improve the accessibility where it is applicable.
+
+## License
+
+MIT License
+
+Copyright (c) 2022 Steve Vang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
