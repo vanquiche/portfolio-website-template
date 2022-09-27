@@ -1,6 +1,9 @@
 # Personal Portfolio Template
+
+**To-dos**
 - add example images
 - add live site
+- add splash screen
 
 I created this for my own personal portfolio website. If you like what you see, you’re welcome to use this project as a template for your own website. This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
 
@@ -12,19 +15,25 @@ I created this for my own personal portfolio website. If you like what you see, 
 
 ### Installation
 
-**Clone this repo**
+1. Clone this repo
 
 ```sh
 git clone https://github.com/vanquiche/portfolio-website-template.git
 ```
 
-**Install dependencies**
+2. Navigate to directory
+
+```sh
+cd portfolio-website-template/
+```
+
+3. Install dependencies
 
 ```sh
 npm install
 ```
 
-**Start development server**
+4. Start development server
 
 ```sh
 npm run dev
