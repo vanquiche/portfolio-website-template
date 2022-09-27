@@ -16,13 +16,15 @@ I created this for my own personal portfolio website. If you like what you see, 
 
 `git clone repolink`
 
-**install dependencies**
+**Install dependencies**
 
 `npm install`
 
-**start development server**
+**Start development server**
 
 `npm run dev`
+
+**Check out the gettingStarted.md**
 
 ## Tech Stack
 - Next.js

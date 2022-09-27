@@ -1,12 +1,17 @@
 # Get Started
 
-## Adding and Editing Content
-You can change the placeholder text in the respective components within ./sections
+## Changing Content
 
-Data in regards to navigation, projects, or skills can be changed withing ./sections/projectData.tsx
+### Text & Data
 
-To add new Sections you can copy and rename the template file within ./sections and add your content.
+You can change the placeholder text in the respective components within `./sections`
+Data in regards to navigation, projects, skills, etc. can be changed withing `./sections/projectData.tsx`
 
-Don't forget to add it inside .pages/index.tsx and the order that it renders.
+### Adding New Sections
 
-Lastly, for convenience I've added module path alias. If you are importing a file you can simple reference it's path as such,'@components/YourComponent'. No more ugly relative paths. This option can be configured in the "paths" object within the tsconfig file.
+To add new Sections you can copy and rename the template file within `./sections` and add your own content.
+Add, remove, rearrange sections inside `<main></main>` tags within `.pages/index.tsx`.
+
+## Module Paths
+
+Lastly, for convenience I've added module path alias. If you are importing a file you can simple reference it's path as such,`'@components/YourComponent'`. No more ugly relative paths. This option can be configured in the "paths" object within the tsconfig file.
