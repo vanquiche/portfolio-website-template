@@ -14,15 +14,21 @@ I created this for my own personal portfolio website. If you like what you see, 
 
 **Clone this repo**
 
-`git clone https://github.com/vanquiche/portfolio-website-template.git`
+```sh
+git clone https://github.com/vanquiche/portfolio-website-template.git
+```
 
 **Install dependencies**
 
-`npm install`
+```sh
+npm install
+```
 
 **Start development server**
 
-`npm run dev`
+```sh
+npm run dev
+```
 
 **Check out the gettingStarted.md**
 
