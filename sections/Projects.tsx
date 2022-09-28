@@ -11,8 +11,7 @@ const Projects = () => {
       <div>
         {/* change your project description here */}
         <p className={styles.articleDescription}>
-          Here are some of my current greatest hits. Check it out and I hope you
-          enjoy them as much as I did creating them. 🥳
+          Ex eiusmod pariatur Lorem sit veniam ut do eiusmod reprehenderit ex mollit sunt. Tempor eiusmod consectetur consequat voluptate consectetur proident ex mollit sit in et magna. Pariatur cillum non minim excepteur laboris aute adipisicing minim enim reprehenderit labore. Qui commodo reprehenderit anim ipsum ipsum pariatur non. Nostrud pariatur duis quis anim aliquip.
         </p>
         {projectData.map((p, i) => (
           <ProjectCard project={p} key={i} />

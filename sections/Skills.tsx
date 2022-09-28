@@ -11,8 +11,7 @@ const Skills = () => {
       <article className={styles.skillContainer}>
         <p className={styles.articleDescription}>
           {/* add your description */}
-          I&apos;m always learning new tools and skills to add to my <strong>Frontend</strong> repertoire, but here are some of
-          the technologies that I&apos;m currently using.
+          Ipsum minim exercitation excepteur officia anim. Mollit anim cupidatat aliqua duis exercitation dolor ex irure voluptate veniam Lorem non. Sunt laboris voluptate et officia amet.
         </p>
         <div className={styles.skillCardWrapper}>
           {/* add your skillcards here with their respective item. itemHeight represents the height of the container, required for proper position  */}

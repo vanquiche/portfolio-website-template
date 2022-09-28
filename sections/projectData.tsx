@@ -123,7 +123,7 @@ export const socialLinks: SocialLinkType[] = [
 // add your project data object into this array
 export const projectData: ProjectCardType[] = [
   {
-    title: 'Flip Flashcard',
+    title: 'Project 1',
     banner: 'https://picsum.photos/700/700',
     bannerAlt: 'a random landscape picture',
     summary:
@@ -131,6 +131,12 @@ export const projectData: ProjectCardType[] = [
     description: (
       <>
         <h4>Introduction</h4>
+        <ZoomImage
+          src='https://picsum.photos/1200/900'
+          alt='placeholder'
+          width={300}
+          height={200}
+        />
         <p>
           Ullamco anim exercitation ipsum exercitation do esse minim aliquip
           tempor. Id reprehenderit velit quis esse esse incididunt anim. Non
@@ -139,34 +145,13 @@ export const projectData: ProjectCardType[] = [
           aute reprehenderit voluptate nullaNon do ea aute consectetur ex quis
           commodo ipsum incididunt Lorem ea in.
         </p>
-        {/* <Image
-          height={300}
-          width={500}
-          layout='responsive'
-          src='https://picsum.photos/800/800'
-          alt='placeholder'
-          loading='lazy'
-        /> */}
-        <ZoomImage
-          src='https://picsum.photos/1200/900'
-          alt='placeholder'
-          width={300}
-          height={200}
-        />
+
         <h4>Second Title</h4>
-        {/* <Image
-            height={500}
-            width={500}
-            layout='responsive'
-            src='https://picsum.photos/800/1200'
-            alt='placeholder'
-            loading='lazy'
-          /> */}
         <ZoomImage
-          src='https://picsum.photos/1200/1200'
-          height={200}
-          width={300}
+          src='https://picsum.photos/1000/900'
           alt='placeholder'
+          width={300}
+          height={200}
         />
         <p>
           Ea deserunt minim sit adipisicing duis enim tempor deserunt excepteur
@@ -184,7 +169,54 @@ export const projectData: ProjectCardType[] = [
         </p>
       </>
     ),
-    tags: ['react', 'typescript', 'expo', 'html', 'css', 'bootstrap', 'redux'],
+    tags: ['react', 'expo', 'css', 'bootstrap', 'redux'],
+    links: [
+      { name: 'demo', path: '' },
+      { name: 'code', path: '' },
+    ],
+  },
+  {
+    title: 'Project 2',
+    banner: 'https://picsum.photos/800/800',
+    bannerAlt: 'a random landscape picture',
+    summary:
+      'Magna deserunt laborum ipsum dolor mollit amet sit velit esse tempor pariatur enim adipisicing mollit.',
+    description: (
+      <>
+        <h4>Introduction</h4>
+        <ZoomImage
+          src='https://picsum.photos/1200/900'
+          alt='placeholder'
+          width={300}
+          height={200}
+        />
+        <p>
+          Ullamco anim exercitation ipsum exercitation do esse minim aliquip
+          tempor. Id reprehenderit velit quis esse esse incididunt anim. Non
+          quis qui ad tempor magna. Pariatur elit nulla laboris aute occaecat
+          laborum deserunt deserunt sit ex incididunt excepteur. Exercitation ad
+          aute reprehenderit voluptate nullaNon do ea aute consectetur ex quis
+          commodo ipsum incididunt Lorem ea in.
+        </p>
+
+        <h4>Second Title</h4>
+        <p>
+          Ea deserunt minim sit adipisicing duis enim tempor deserunt excepteur
+          aliqua in ex. Excepteur ex do enim duis eiusmod ut dolor duis do non
+          ex. Labore excepteur aute consequat esse duis consectetur mollit
+          officia ullamco Lorem laboris incididunt nulla esse.Et anim incididunt
+          voluptate nostrud laborum velit do culpa occaecat ea. Consectetur
+          fugiat excepteur laborum laborum. Ullamco do enim dolor cupidatat
+          minim commodo esse aliquip consequat. Dolore voluptate incididunt
+          aliqua reprehenderit ut pariatur ad cupidatat in est excepteur et
+          ullamco. Adipisicing ad ut non sit cupidatat do ut voluptate quis aute
+          excepteur ut sunt. Ex fugiat deserunt sit sit qui ad commodo nulla ad
+          esse eiusmod excepteur fugiat. Aliquip magna consectetur dolore fugiat
+          id laboris.
+        </p>
+      </>
+    ),
+    tags: ['node', 'typescript', 'html', 'sass'],
     links: [
       { name: 'demo', path: '' },
       { name: 'code', path: '' },
