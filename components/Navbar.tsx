@@ -15,7 +15,7 @@ interface Props {
 
 const Navbar = ({ links }: Props) => {
   const { setTheme, themeStyle } = useContext(ThemeContext);
-  const { location } = useContext(NavLocationContext);
+  const { location, setLocation } = useContext(NavLocationContext);
 
   const handleChange = (checked: boolean) => {
     setTheme(checked ? ThemeOptions.Light : ThemeOptions.Dark);
@@ -25,10 +25,13 @@ const Navbar = ({ links }: Props) => {
     e.preventDefault();
     const section = id.replace('#', '');
     const el = document.getElementById(section);
-    el?.scrollIntoView({
-      block: 'start',
-      behavior: 'smooth',
-    });
+    if (el) {
+      el.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+      });
+      // setLocation(section);
+    }
   };
 
   return (
@@ -46,7 +49,12 @@ const Navbar = ({ links }: Props) => {
                 color={themeStyle.color}
                 aria-hidden={true}
               />
-              <a href='' onClick={handleClick(l.path)} aria-label={l.name} className={styles.link}>
+              <a
+                href=''
+                onClick={handleClick(l.path)}
+                aria-label={l.name}
+                className={styles.link}
+              >
                 {l.icon}
               </a>
             </span>

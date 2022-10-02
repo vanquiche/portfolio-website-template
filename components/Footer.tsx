@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer} role='contentinfo'>
       <span>
-        Cody &amp; design by <strong>Steve Vang</strong>
+        Code &amp; design by <strong>Steve Vang</strong>
       </span>
       <span>
         Interested in using this as a template for your own <b>portfolio</b>? Check out
