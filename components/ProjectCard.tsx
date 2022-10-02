@@ -1,8 +1,14 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import { Transition } from 'react-transition-group';
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import {
+  faDesktop,
+  faCodeBranch,
+  faCaretRight,
+  faCaretDown,
+} from '@fortawesome/free-solid-svg-icons';
 // components
 import Tags from '@components/Tags';
 import ProgressBarContainer from '@components/ProgressBarContainer';
@@ -11,18 +17,40 @@ import { ProjectCardType } from 'types';
 import { useMediaQuery } from 'react-responsive';
 // styles
 import styles from '@styles/ProjectCard.module.sass';
+import ImageGallery from './ImageGallery';
 
 interface Props {
   project: ProjectCardType;
 }
 
 const ProjectCard = ({ project }: Props) => {
+  const [detailsVisible, setDetailsVisible] = useState(false);
   const isMobile = useMediaQuery({ query: '(max-width: 675px)' });
+  const nodeRef = useRef(null);
+  const duration = 175;
+
   const progressBarStyle = {
     width: '125px',
     justifyContent: 'center',
     border: '1px solid',
   };
+
+  const defaultStyles: React.CSSProperties = {
+    transition: `transform ${duration}ms ease-out`,
+    transform: 'scaleY(0)',
+    transformOrigin: 'top',
+  };
+
+  const transitionStyles: any = {
+    entering: { transform: 'scaleY(1)' },
+    entered: { transform: 'scaleY(1)' },
+    exiting: { transform: 'scaleY(0)' },
+    exited: { transform: 'scaleY(0)' },
+  };
+
+  function toggleDetails() {
+    setDetailsVisible((prev) => !prev);
+  }
 
   return (
     // container
@@ -30,54 +58,89 @@ const ProjectCard = ({ project }: Props) => {
       <h2 className={styles.projectCardTitle}>{project.title.toUpperCase()}</h2>
       <div className={styles.projectCardContainer}>
         {/* card */}
+
         <div className={styles.projectCard}>
           {/* banner */}
           <Image
             src={project.banner}
-            width={375}
-            height={300}
+            width={600}
+            height={275}
             objectFit='cover'
-            // layout='responsive'
-            className={styles.projectCardImage}
             alt={project.bannerAlt}
           />
           {/* description */}
+
           <h3>{project.summary}</h3>
 
-          <div className={styles.projectCardLinkContainer}>
-            {project.links.map((l, i) => {
-              return (
+          <section className={styles.projectCardDetails}>
+            <div>
+              <div
+                className={styles.projectCardLinkContainer}
+                style={{ justifyContent: 'center' }}
+              >
+                {project.links.map((l, i) => {
+                  return (
+                    <ProgressBarContainer
+                      key={i}
+                      containerStyle={progressBarStyle}
+                      animateTo='100%'
+                      fixed={isMobile}
+                    >
+                      <a href={l.path}>
+                        <FontAwesomeIcon
+                          icon={l.name === 'demo' ? faDesktop : faCodeBranch}
+                          className={styles.projectCardLinkIcon}
+                        />
+                        {l.name}
+                      </a>
+                    </ProgressBarContainer>
+                  );
+                })}
                 <ProgressBarContainer
-                  key={i}
                   containerStyle={progressBarStyle}
                   animateTo='100%'
                   fixed={isMobile}
+                  onClick={toggleDetails}
                 >
-                  <a href={l.path}>
+                  <span>
                     <FontAwesomeIcon
-                      icon={l.name === 'demo' ? faDesktop : faCodeBranch}
+                      icon={detailsVisible ? faCaretDown : faCaretRight}
                       className={styles.projectCardLinkIcon}
                     />
-                    {l.name}
-                  </a>
+                    {detailsVisible ? 'close' : 'details'}
+                  </span>
                 </ProgressBarContainer>
-              );
-            })}
-          </div>
-
-          <details className={styles.projectCardDetails}>
-            <summary />
-            <div className={styles.projectCardSummaryContainer}>
-              {project.description}
+              </div>
             </div>
-          </details>
 
-          {/* tags container */}
-          <div className={styles.tagsContainer}>
-            {project.tags.map((p, i) => (
-              <Tags tag={p} key={i} />
-            ))}
-          </div>
+            <Transition
+              nodeRef={nodeRef}
+              timeout={duration}
+              in={detailsVisible}
+              unmountOnExit
+              mountOnEnter
+            >
+              {(state) => (
+                <section
+                  className={styles.projectCardSummaryContainer}
+                  ref={nodeRef}
+                  style={{
+                    ...defaultStyles,
+                    ...transitionStyles[state],
+                  }}
+                >
+                  <p>{project.description}</p>
+                  <ImageGallery images={project.media} />
+                  {/* tags container */}
+                  <div className={styles.tagsContainer}>
+                    {project.tags.map((p, i) => (
+                      <Tags tag={p} key={i} />
+                    ))}
+                  </div>
+                </section>
+              )}
+            </Transition>
+          </section>
         </div>
       </div>
     </article>
