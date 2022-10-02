@@ -5,7 +5,8 @@ export interface ProjectCardType {
   banner: string;
   bannerAlt: string;
   summary: string;
-  description: ReactElement;
+  description: string;
+  media: MediaImageType[];
   tags: string[];
   links: { name: string; path: string }[];
 }
@@ -25,5 +26,12 @@ export interface SkillItemType {
 export interface SocialLinkType {
   icon: ReactElement;
   link: string;
+}
+
+export interface MediaImageType {
+  src: string;
+  alt: string;
+  height: number;
+  width: number;
 }
 
