@@ -153,8 +153,8 @@ export const projectData: ProjectCardType[] = [
     ],
     tags: ['node', 'typescript', 'expo', 'css'],
     links: [
-      { name: 'site', path: '', icon: <FontAwesomeIcon icon={faDesktop} /> },
-      { name: 'code', path: '', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
+      { name: 'site', path: 'https://google.com', icon: <FontAwesomeIcon icon={faDesktop} /> },
+      { name: 'code', path: 'https://youtube.com', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
     ],
   },
   {

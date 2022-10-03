@@ -24,7 +24,7 @@ const SectionCard = ({ id, title, children }: Props) => {
   return (
     <section
       id={id}
-      aria-labelledby={title}
+      title={id}
       className={styles.layoutContainer}
       ref={ref}
     >

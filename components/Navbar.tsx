@@ -37,7 +37,6 @@ const Navbar = ({ links }: Props) => {
       <nav
         className={styles.navbar}
         style={themeStyle}
-        aria-labelledby='primary-navigation'
       >
         {links.map((l, i) => {
           return (

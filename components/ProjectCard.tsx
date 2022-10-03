@@ -47,6 +47,12 @@ const ProjectCard = ({ project }: Props) => {
     setDetailsVisible((prev) => !prev);
   }
 
+  const navigateToLink = (path: string) => () => {
+    if (typeof window !== 'undefined') {
+      window.location.href = path
+    }
+  }
+
   return (
     // container
     <article>
@@ -81,11 +87,12 @@ const ProjectCard = ({ project }: Props) => {
                       containerStyle={progressBarStyle}
                       animateTo='100%'
                       fixed={isMobile}
+                      onClick={navigateToLink(l.path)}
                     >
-                      <a href={l.path}>
+                      <span>
                         {l.icon && l.icon}
                         {l.name}
-                      </a>
+                      </span>
                     </ProgressBarContainer>
                   );
                 })}
