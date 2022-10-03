@@ -9,8 +9,8 @@ I created this for my own personal portfolio website.  If you like what you see,
 ## Table of Contents
 
 1. [Examples](#Examples)
-2. [Getting-Started](#Getting Started)
-3. [Tech-Stack](#Tech Stack)
+2. [Getting Started](#Getting-Started)
+3. [Tech Stack](#Tech-Stack)
 4. [Motivation](#Motivation)
 5. [Accessibility](#Accessibility)
 6. [License](#License)
