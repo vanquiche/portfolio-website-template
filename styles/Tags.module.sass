@@ -2,10 +2,12 @@
 @use '@styles/variables' as *
 
 .tag
-  width: 100px
+  width: 115px
   color: black
   padding: 0.1rem 0.75rem
   font-size: $xsmall-text
-  font-weight: $bold-text
+  // font-weight: $bold-text
+  overflow: hidden
+  white-space: nowrap
   @extend .flex-row
   @extend .center-flex-item

@@ -10,7 +10,6 @@
   font-size: $subheading-title
   font-weight: $bold-subheading
   text-align: center
-  margin-bottom: 1rem
 
 .projectCardDetails
   margin-bottom: 1rem
@@ -29,21 +28,17 @@
   @extend .flex-column
   h3
     font-weight: 400
-    // text-align: center
-    // margin: 1rem 0
+
     font-size: inherit
     margin: 1rem 0
   h4
     margin: 1rem 0
 
 .projectCardSummaryContainer
-  // transform: translateY(-500px)
 
 .projectCardImage
   width: 100%
   height: auto
-  // max-height: 250px
-  // object-fit: cover
 
 .projectCardLinkContainer
   display: flex
@@ -69,7 +64,9 @@
 .projectCardLinkIcon
   margin-right: 0.55rem
 
-@media screen and (min-width: 500px)
+@media screen and (min-width: 675px)
   .projectCardLink
     width: 135px
+  .projectCardTitle
+    margin-bottom: 1rem
 
