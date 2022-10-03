@@ -56,15 +56,14 @@ const ProjectCard = ({ project }: Props) => {
 
         <div className={styles.projectCard}>
           {/* banner */}
-          {!isMobile && (
+          <span className={styles.bannerImage}>
             <Image
               src={project.banner}
-              width={600}
-              height={275}
+              layout='fill'
               objectFit='cover'
               alt={project.bannerAlt}
             />
-          )}
+          </span>
           {/* description */}
 
           <h3>{project.summary}</h3>
