@@ -14,34 +14,40 @@ I created this for my own personal portfolio website. If you like what you see, 
 
 ### Installation
 
-1. Clone this repo
+1. **Clone this repo**
 
 ```sh
 git clone https://github.com/vanquiche/portfolio-website-template.git
 ```
 
-2. Navigate to directory
+2. **Navigate to directory**
 
 ```sh
 cd portfolio-website-template/
 ```
 
-3. Install dependencies
+3. **Install dependencies**
 
 ```sh
 npm install
 ```
 
-4. Copy and rename `exampleProjectData.tsx`
+4. **Copy and rename `exampleProjectData.tsx`**
 
 ```sh
 cp sections/exampleProjectData.tsx sections/projectData.tsx
 ```
 
-5. Start development server
+5. **Start development server**
 
 ```sh
 npm run dev
+```
+
+6. **Open localhost port:3000 in your browser**
+
+```sh
+http://localhost:3000
 ```
 
 ## Tech Stack
