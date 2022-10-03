@@ -126,7 +126,7 @@ export const projectData: ProjectCardType[] = [
   {
     title: 'To-Do App',
     banner: 'https://picsum.photos/900/900?random=9',
-    bannerAlt: 'a random landscape picture',
+    bannerAlt: 'to-do app banner',
     summary:
       'Veniam esse veniam excepteur id cillum duis excepteur nisi et do consectetur. Cillum eu consequat anim aliquip voluptate excepteur nisi culpa duis id pariatur irure.',
     description:
@@ -134,19 +134,19 @@ export const projectData: ProjectCardType[] = [
     media: [
       {
         src: 'https://picsum.photos/500/500?random=8',
-        alt: 'placeholder',
+        alt: 'project screenshot 1',
         width: 500,
         height: 500,
       },
       {
         src: 'https://picsum.photos/500/500?random=9',
-        alt: 'placeholder',
+        alt: 'project screen shot 2',
         width: 500,
         height: 500,
       },
       {
         src: 'https://picsum.photos/500/500?random=12',
-        alt: 'placeholder',
+        alt: 'project screenshot3',
         width: 500,
         height: 500,
       },
@@ -157,74 +157,74 @@ export const projectData: ProjectCardType[] = [
       { name: 'code', path: 'https://youtube.com', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
     ],
   },
-  {
-    title: 'eCommerce Website',
-    banner: 'https://picsum.photos/900/900?random=3',
-    bannerAlt: 'a random landscape picture',
-    summary:
-      'Et ipsum excepteur reprehenderit qui ut fugiat magna. Ipsum eu ex commodo Lorem cillum labore eiusmod ipsum. Cillum esse officia voluptate exercitation nulla.',
-    description:
-      'Excepteur dolore amet officia consequat aliqua non. In in id tempor aute sint aliqua. Amet duis laboris ex sunt. Labore minim occaecat id aliqua duis ad in consectetur duis amet culpa. Magna nulla qui incididunt aute velit nisi dolore laboris ea occaecat. Velit anim consequat non id occaecat reprehenderit veniam amet nisi.',
-    media: [
-      {
-        src: 'https://picsum.photos/500/500?random=4',
-        alt: 'placeholder',
-        width: 500,
-        height: 500,
-      },
-      {
-        src: 'https://picsum.photos/500/500?random=5',
-        alt: 'placeholder',
-        width: 500,
-        height: 500,
-      },
-      {
-        src: 'https://picsum.photos/500/500?random=6',
-        alt: 'placeholder',
-        width: 500,
-        height: 500,
-      },
-    ],
-    tags: ['react', 'redux', 'html', 'sass'],
-    links: [
-      { name: 'site', path: '', icon: <FontAwesomeIcon icon={faDesktop} /> },
-      { name: 'code', path: '', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
-    ],
-  },
-  {
-    title: 'Tic-Tac-Toe Game',
-    banner: 'https://picsum.photos/900/900?random=1',
-    bannerAlt: 'a random landscape picture',
-    summary:
-      'Esse dolore dolore anim esse ipsum elit tempor tempor eiusmod sint. Officia enim ut mollit non non esse mollit incididunt cupidatat laborum. Eiusmod laborum laboris esse nostrud duis laborum pariatur ut esse aliquip. Eu velit exercitation aute ex cillum ea in ipsum eiusmod minim fugiat.',
-    description:
-      'Excepteur dolore amet officia consequat aliqua non. In in id tempor aute sint aliqua. Amet duis laboris ex sunt. Labore minim occaecat id aliqua duis ad in consectetur duis amet culpa. Magna nulla qui incididunt aute velit nisi dolore laboris ea occaecat. Velit anim consequat non id occaecat reprehenderit veniam amet nisi.',
-    media: [
-      {
-        src: 'https://picsum.photos/500/500?random=1',
-        alt: 'placeholder',
-        width: 500,
-        height: 500,
-      },
-      {
-        src: 'https://picsum.photos/500/500?random=2',
-        alt: 'placeholder',
-        width: 500,
-        height: 500,
-      },
-      {
-        src: 'https://picsum.photos/500/500?random=3',
-        alt: 'placeholder',
-        width: 500,
-        height: 500,
-      },
-    ],
-    tags: ['react-native', 'javascript', 'html', 'bootstrap', 'sass'],
-    links: [
-      { name: 'site', path: '', icon: <FontAwesomeIcon icon={faDesktop} /> },
-      { name: 'code', path: '', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
-    ],
-  },
+  // {
+  //   title: 'eCommerce Website',
+  //   banner: 'https://picsum.photos/900/900?random=3',
+  //   bannerAlt: 'banner for ',
+  //   summary:
+  //     'Et ipsum excepteur reprehenderit qui ut fugiat magna. Ipsum eu ex commodo Lorem cillum labore eiusmod ipsum. Cillum esse officia voluptate exercitation nulla.',
+  //   description:
+  //     'Excepteur dolore amet officia consequat aliqua non. In in id tempor aute sint aliqua. Amet duis laboris ex sunt. Labore minim occaecat id aliqua duis ad in consectetur duis amet culpa. Magna nulla qui incididunt aute velit nisi dolore laboris ea occaecat. Velit anim consequat non id occaecat reprehenderit veniam amet nisi.',
+  //   media: [
+  //     {
+  //       src: 'https://picsum.photos/500/500?random=4',
+  //       alt: 'placeholder',
+  //       width: 500,
+  //       height: 500,
+  //     },
+  //     {
+  //       src: 'https://picsum.photos/500/500?random=5',
+  //       alt: 'placeholder',
+  //       width: 500,
+  //       height: 500,
+  //     },
+  //     {
+  //       src: 'https://picsum.photos/500/500?random=6',
+  //       alt: 'placeholder',
+  //       width: 500,
+  //       height: 500,
+  //     },
+  //   ],
+  //   tags: ['react', 'redux', 'html', 'sass'],
+  //   links: [
+  //     { name: 'site', path: '', icon: <FontAwesomeIcon icon={faDesktop} /> },
+  //     { name: 'code', path: '', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
+  //   ],
+  // },
+  // {
+  //   title: 'Tic-Tac-Toe Game',
+  //   banner: 'https://picsum.photos/900/900?random=1',
+  //   bannerAlt: 'a random landscape picture',
+  //   summary:
+  //     'Esse dolore dolore anim esse ipsum elit tempor tempor eiusmod sint. Officia enim ut mollit non non esse mollit incididunt cupidatat laborum. Eiusmod laborum laboris esse nostrud duis laborum pariatur ut esse aliquip. Eu velit exercitation aute ex cillum ea in ipsum eiusmod minim fugiat.',
+  //   description:
+  //     'Excepteur dolore amet officia consequat aliqua non. In in id tempor aute sint aliqua. Amet duis laboris ex sunt. Labore minim occaecat id aliqua duis ad in consectetur duis amet culpa. Magna nulla qui incididunt aute velit nisi dolore laboris ea occaecat. Velit anim consequat non id occaecat reprehenderit veniam amet nisi.',
+  //   media: [
+  //     {
+  //       src: 'https://picsum.photos/500/500?random=1',
+  //       alt: 'placeholder',
+  //       width: 500,
+  //       height: 500,
+  //     },
+  //     {
+  //       src: 'https://picsum.photos/500/500?random=2',
+  //       alt: 'placeholder',
+  //       width: 500,
+  //       height: 500,
+  //     },
+  //     {
+  //       src: 'https://picsum.photos/500/500?random=3',
+  //       alt: 'placeholder',
+  //       width: 500,
+  //       height: 500,
+  //     },
+  //   ],
+  //   tags: ['react-native', 'javascript', 'html', 'bootstrap', 'sass'],
+  //   links: [
+  //     { name: 'site', path: '', icon: <FontAwesomeIcon icon={faDesktop} /> },
+  //     { name: 'code', path: '', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
+  //   ],
+  // },
 ];
 
 //

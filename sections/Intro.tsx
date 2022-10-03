@@ -22,7 +22,7 @@ const Intro = () => {
           src='https://picsum.photos/250/250'
           height={250}
           width={250}
-          alt='placeholder'
+          alt='profile image'
         />
         <div>
           <p>

@@ -20,7 +20,7 @@ const Contact = () => {
           see if we&apos;re a match. 💕
         </p>
         <ClipCopy copy='stevevang425@gmail.com' theme={themeStyle} />
-        <p className={styles.socialLinksTitle}>Connect with me 🤖</p>
+        <h2 className={styles.socialLinksTitle}>Connect with me 🤖</h2>
         <section className={styles.socialLinksContainer}>
           {/* add your social information in the projectData.tsx file */}
           {socialLinks.map((s, i) => {

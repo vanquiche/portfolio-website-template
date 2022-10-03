@@ -10,12 +10,11 @@ type Item = {
 };
 
 interface Props {
-  title?: string;
   itemHeight: number;
   items: Item[];
 }
 
-const SkillCard = ({ items, title, itemHeight }: Props) => {
+const SkillCard = ({ items, itemHeight }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const { isVisible, hasRender } = useIntersectionObserver(ref, 0.25);
 
@@ -41,7 +40,6 @@ const SkillCard = ({ items, title, itemHeight }: Props) => {
 
   return (
     <div>
-      <p className={styles.skillTitle}>{title}</p>
       <div
         ref={ref}
         className={styles.skillItemContainer}
