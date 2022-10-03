@@ -1,16 +1,14 @@
 # Personal Portfolio Template
 
-**To-dos**
-- add example images
-- add live site
+I created this for my own personal portfolio website.  If you like what you see, you’re welcome to use this project as a template for your own website. Some of the features I've included are:
 
-I created this for my own personal portfolio website. If you like what you see, you’re welcome to use this project as a template for your own website. This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
-
-- **SEO-friendly**: Rich HTML with SSR
-- **Performance Optimization**: Images are lazy loaded, cached, and many other optimizing features!
-- **Easy Deploy**: If you choose to host with Vercel, there is no easier and faster way to get your site live
+- **Light/Dark theme toggle**
+- **Lazy loading of images**
+- **Mobile responsive**
 
 ## Examples
+
+live site link coming soon...
 
 ![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-20-55_cubmzw.png)
 
@@ -66,7 +64,7 @@ http://localhost:3000
 - Sass CSS
 - FontAwesome Icons
 
-## Design Philosophy
+## Motivation
 
 As much as I love websites with bold designs, flashy transitions and scrolling animations, In my opinion, a portfolio website may not be the place for it (I’ve added some animation to make this site dynamic without being distracting). What I've come to learn is that most people have short attention spans. You’ll risk users skipping your content if your website is confusing or annoying to use. Some things that typically result in a bad user experience (aside from long load times, poor color schemes, and unintuitive navigation/layout) are:
 
@@ -74,7 +72,11 @@ As much as I love websites with bold designs, flashy transitions and scrolling a
 - Slow animation/transitions (anything over 1000ms)
 - Distracting animated backgrounds
 
-You can think of your portfolio website as an ad and the goal of any ad is conversion. In this context, our conversion goal is to convince any potential employer on your site to make contact, which hopefully leads to an interview, and ultimately a job.
+This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
+
+- **SEO-friendly**: Rich HTML with SSR
+- **Performance Optimization**: Images are lazy loaded, cached, and many other optimizing features!
+- **Easy Deploy**: If you choose to host with Vercel, there is no easier and faster way to get your site live
 
 ## Accessibility
 
