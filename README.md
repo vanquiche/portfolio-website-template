@@ -3,11 +3,10 @@
 **To-dos**
 - add example images
 - add live site
-- add splash screen
 
 I created this for my own personal portfolio website. If you like what you see, you’re welcome to use this project as a template for your own website. This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
 
-- **SEO-friendly**: You get rich HTML with SSR
+- **SEO-friendly**: Rich HTML with SSR
 - **Performance Optimization**: Images are lazy loaded, cached, and many other optimizing features!
 - **Easy Deploy**: If you choose to host with Vercel, there is no easier and faster way to get your site live
 
@@ -38,8 +37,6 @@ npm install
 ```sh
 npm run dev
 ```
-
-**Check out the gettingStarted.md**
 
 ## Tech Stack
 - Next.js

@@ -4,8 +4,6 @@ import { Transition } from 'react-transition-group';
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faDesktop,
-  faCodeBranch,
   faCaretRight,
   faCaretDown,
 } from '@fortawesome/free-solid-svg-icons';
@@ -87,10 +85,7 @@ const ProjectCard = ({ project }: Props) => {
                       fixed={isMobile}
                     >
                       <a href={l.path}>
-                        <FontAwesomeIcon
-                          icon={l.name === 'demo' ? faDesktop : faCodeBranch}
-                          className={styles.projectCardLinkIcon}
-                        />
+                        {l.icon && l.icon}
                         {l.name}
                       </a>
                     </ProgressBarContainer>

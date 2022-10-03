@@ -8,7 +8,7 @@ export interface ProjectCardType {
   description: string;
   media: MediaImageType[];
   tags: string[];
-  links: { name: string; path: string }[];
+  links: { name: string; path: string; icon?: ReactElement }[];
 }
 
 export interface NavLinkType {
