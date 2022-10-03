@@ -31,6 +31,9 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CustomIcon from '@components/CustomIcon';
 
+// 
+// COPY THIS FILE AND RENAME IT TO 'projectData' and add your own data
+//
 //
 // THEMES
 //

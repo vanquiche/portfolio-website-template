@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 # data
-projectData.tsx
-myData.tsx
+projectData.*
+myData.*

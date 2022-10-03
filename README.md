@@ -32,7 +32,13 @@ cd portfolio-website-template/
 npm install
 ```
 
-4. Start development server
+4. Copy and rename `exampleProjectData.tsx`
+
+```sh
+cp sections/exampleProjectData.tsx sections/projectData.tsx
+```
+
+5. Start development server
 
 ```sh
 npm run dev
