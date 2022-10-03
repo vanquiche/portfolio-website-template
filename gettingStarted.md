@@ -5,7 +5,7 @@
 ### Text & Data
 
 You can change the placeholder text in the respective components within `./sections`
-Data in regards to navigation, projects, skills, etc. can be changed withing `./sections/projectData.tsx`
+Data in regards to navigation, projects, skills, etc. can be changed within `./sections/projectData.tsx`
 
 ### Adding New Sections
 

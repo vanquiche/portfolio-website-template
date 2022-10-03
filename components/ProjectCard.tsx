@@ -3,10 +3,7 @@ import React, { useRef, useState } from 'react';
 import { Transition } from 'react-transition-group';
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCaretRight,
-  faCaretDown,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 // components
 import Tags from '@components/Tags';
 import ProgressBarContainer from '@components/ProgressBarContainer';
@@ -59,18 +56,20 @@ const ProjectCard = ({ project }: Props) => {
 
         <div className={styles.projectCard}>
           {/* banner */}
-          <Image
-            src={project.banner}
-            width={600}
-            height={275}
-            objectFit='cover'
-            alt={project.bannerAlt}
-          />
+          {!isMobile && (
+            <Image
+              src={project.banner}
+              width={600}
+              height={275}
+              objectFit='cover'
+              alt={project.bannerAlt}
+            />
+          )}
           {/* description */}
 
           <h3>{project.summary}</h3>
 
-          <section className={styles.projectCardDetails}>
+          <div className={styles.projectCardDetails}>
             <div>
               <div
                 className={styles.projectCardLinkContainer}
@@ -116,7 +115,7 @@ const ProjectCard = ({ project }: Props) => {
               mountOnEnter
             >
               {(state) => (
-                <section
+                <div
                   className={styles.projectCardSummaryContainer}
                   ref={nodeRef}
                   style={{
@@ -132,10 +131,10 @@ const ProjectCard = ({ project }: Props) => {
                       <Tags tag={p} key={i} />
                     ))}
                   </div>
-                </section>
+                </div>
               )}
             </Transition>
-          </section>
+          </div>
         </div>
       </div>
     </article>
