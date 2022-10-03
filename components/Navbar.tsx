@@ -15,14 +15,13 @@ interface Props {
 
 const Navbar = ({ links }: Props) => {
   const { setTheme, themeStyle } = useContext(ThemeContext);
-  const { location, setLocation } = useContext(NavLocationContext);
+  const { location } = useContext(NavLocationContext);
 
   const handleChange = (checked: boolean) => {
     setTheme(checked ? ThemeOptions.Light : ThemeOptions.Dark);
   };
 
-  const handleClick = (id: string) => (e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
+  const handleClick = (id: string) => () => {
     const section = id.replace('#', '');
     const el = document.getElementById(section);
     if (el) {
@@ -30,7 +29,6 @@ const Navbar = ({ links }: Props) => {
         block: 'start',
         behavior: 'smooth',
       });
-      // setLocation(section);
     }
   };
 
@@ -49,14 +47,13 @@ const Navbar = ({ links }: Props) => {
                 color={themeStyle.color}
                 aria-hidden={true}
               />
-              <a
-                href=''
+              <button
                 onClick={handleClick(l.path)}
                 aria-label={l.name}
                 className={styles.link}
               >
                 {l.icon}
-              </a>
+              </button>
             </span>
           );
         })}
