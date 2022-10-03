@@ -1,6 +1,6 @@
 # Personal Portfolio Template
 
-I created this for my own personal portfolio website.  If you like what you see, you’re welcome to use this project as a template for your own website. Some of the features I've included are:
+I created this for my own personal portfolio website.  If you like what you see, you’re welcome to use this project as a template for your own website. Some of the features that are included in this website:
 
 - **Light/Dark theme toggle**
 - **Lazy loading of images**
@@ -14,7 +14,7 @@ live site link coming soon...
 
 ![desktop screenshot example 2](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-24_hfcuwy.png)
 
-![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-24_hfcuwy.png)
+![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778786/personal-portfolio-template/Screenshot_2022-10-03_15-21-37_j59gg0.png)
 
 ![desktop screenshot example 4](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-54_bpf5vg.png)
 
