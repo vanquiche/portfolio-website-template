@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '@styles/Tags.module.sass';
-import FontColorContrast from 'font-color-contrast'
 
 interface Props {
   tag: string;
@@ -43,7 +42,7 @@ const Tags = ({ tag }: Props) => {
 
   const style = {
     backgroundColor: getColor(tag),
-    color: FontColorContrast(getColor(tag), 0.5)
+    color: 'black'
   };
 
   return <span className={styles.tag} style={style}>{'#' + tag}</span>;
