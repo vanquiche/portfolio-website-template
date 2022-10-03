@@ -10,6 +10,16 @@ I created this for my own personal portfolio website. If you like what you see, 
 - **Performance Optimization**: Images are lazy loaded, cached, and many other optimizing features!
 - **Easy Deploy**: If you choose to host with Vercel, there is no easier and faster way to get your site live
 
+## Examples
+
+![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-20-55_cubmzw.png)
+
+![desktop screenshot example 2](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-24_hfcuwy.png)
+
+![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-24_hfcuwy.png)
+
+![desktop screenshot example 4](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-54_bpf5vg.png)
+
 ## Getting Started
 
 ### Installation
