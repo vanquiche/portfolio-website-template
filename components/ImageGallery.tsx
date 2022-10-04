@@ -19,10 +19,18 @@ const ImageGallery = ({ images }: Props) => {
             isMobile && image.mobileImg ? image.mobileImg.height : image.height,
           width:
             isMobile && image.mobileImg ? image.mobileImg.width : image.width,
+          blurDataURL:
+            isMobile && image.mobileImg
+              ? `/_next/image?url=${image.mobileImg.src}&w=16&q=1`
+              : `/_next/image?url=${image.src}&w=16&q=1`,
         };
         return (
           <span key={i}>
-            <Image {...imageData} alt={image.alt} />
+            <Image
+              {...imageData}
+              alt={image.alt}
+              placeholder='blur'
+            />
           </span>
         );
       })}
