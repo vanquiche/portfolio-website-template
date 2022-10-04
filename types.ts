@@ -2,12 +2,12 @@ import { ReactElement } from 'react';
 
 export interface ProjectCardType {
   title: string;
-  banner: string;
-  bannerAlt: string;
+  banner?: string;
+  bannerAlt?: string;
   summary: string;
-  description: string;
-  media: MediaImageType[];
-  tags: string[];
+  description?: string;
+  media?: MediaImageType[];
+  tags?: string[];
   links: { name: string; path: string; icon?: ReactElement }[];
 }
 

@@ -8,8 +8,12 @@ const Footer = () => {
         Code &amp; design by <strong>Steve Vang</strong>
       </span>
       <span>
-        Interested in using this as a template for your own <b>portfolio</b>? Check out
-        the <a href=''>repository</a> 👈
+        Interested in using this as a template for your own <b>portfolio</b>?
+        Check out the{' '}
+        <a href='https://github.com/vanquiche/portfolio-website-template'>
+          repository
+        </a>{' '}
+        👈
       </span>
     </footer>
   );

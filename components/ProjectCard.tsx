@@ -49,9 +49,9 @@ const ProjectCard = ({ project }: Props) => {
 
   const navigateToLink = (path: string) => () => {
     if (typeof window !== 'undefined') {
-      window.location.href = path
+      window.location.href = path;
     }
-  }
+  };
 
   return (
     // container
@@ -62,14 +62,16 @@ const ProjectCard = ({ project }: Props) => {
 
         <div className={styles.projectCard}>
           {/* banner */}
-          <span className={styles.bannerImage}>
-            <Image
-              src={project.banner}
-              layout='fill'
-              objectFit='cover'
-              alt={project.bannerAlt}
-            />
-          </span>
+          {project.banner && (
+            <span className={styles.bannerImage}>
+              <Image
+                src={project.banner}
+                layout='fill'
+                objectFit='cover'
+                alt={project.bannerAlt}
+              />
+            </span>
+          )}
           {/* description */}
 
           <h3>{project.summary}</h3>
@@ -96,20 +98,22 @@ const ProjectCard = ({ project }: Props) => {
                     </ProgressBarContainer>
                   );
                 })}
-                <ProgressBarContainer
-                  containerStyle={progressBarStyle}
-                  animateTo='100%'
-                  fixed={isMobile}
-                  onClick={toggleDetails}
-                >
-                  <span>
-                    <FontAwesomeIcon
-                      icon={detailsVisible ? faCaretDown : faCaretRight}
-                      className={styles.projectCardLinkIcon}
-                    />
-                    {detailsVisible ? 'close' : 'details'}
-                  </span>
-                </ProgressBarContainer>
+                {(project.description || project.media) && (
+                  <ProgressBarContainer
+                    containerStyle={progressBarStyle}
+                    animateTo='100%'
+                    fixed={isMobile}
+                    onClick={toggleDetails}
+                  >
+                    <span>
+                      <FontAwesomeIcon
+                        icon={detailsVisible ? faCaretDown : faCaretRight}
+                        className={styles.projectCardLinkIcon}
+                      />
+                      {detailsVisible ? 'close' : 'details'}
+                    </span>
+                  </ProgressBarContainer>
+                )}
               </div>
             </div>
 
@@ -129,13 +133,12 @@ const ProjectCard = ({ project }: Props) => {
                     ...transitionStyles[state],
                   }}
                 >
-                  <p>{project.description}</p>
-                  <ImageGallery images={project.media} />
+                  {project.description && <p>{project.description}</p>}
+                  {project.media && <ImageGallery images={project.media} />}
                   {/* tags container */}
                   <div className={styles.tagsContainer}>
-                    {project.tags.map((p, i) => (
-                      <Tags tag={p} key={i} />
-                    ))}
+                    {project.tags &&
+                      project.tags.map((p, i) => <Tags tag={p} key={i} />)}
                   </div>
                 </div>
               )}
