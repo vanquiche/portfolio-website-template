@@ -20,11 +20,9 @@
     "react-dom": "18.2.0",
     "react-random-reveal": "^2.0.0",
     "react-responsive": "^9.0.0",
-    "react-slick": "^0.29.0",
     "react-switch": "^7.0.0",
     "react-transition-group": "^4.4.5",
-    "sass": "^1.54.9",
-    "slick-carousel": "^1.8.1"
+    "sass": "^1.54.9"
   },
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.7",
