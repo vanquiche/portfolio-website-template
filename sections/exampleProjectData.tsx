@@ -31,7 +31,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CustomIcon from '@components/CustomIcon';
 
-// 
+//
 // COPY THIS FILE AND RENAME IT TO 'projectData' and add your own data
 //
 //
@@ -109,7 +109,7 @@ export const links: NavLinkType[] = [
 export const socialLinks: SocialLinkType[] = [
   {
     icon: <FontAwesomeIcon icon={faGithub} title='github icon' size='2x' />,
-    link: 'github',
+    link: 'https://github.com/vanquiche',
   },
   {
     icon: <FontAwesomeIcon icon={faLinkedin} title='linkedIn icon' size='2x' />,
@@ -127,28 +127,28 @@ export const socialLinks: SocialLinkType[] = [
 // add your project data object into this array
 export const projectData: ProjectCardType[] = [
   {
-    title: 'Project 1',
-    banner: 'https://picsum.photos/900/900',
+    title: 'Tic-Tac-Toe Game',
+    banner: 'https://picsum.photos/900/900?random=1',
     bannerAlt: 'a random landscape picture',
     summary:
-      'Veniam esse veniam excepteur id cillum duis excepteur nisi et do consectetur. Cillum eu consequat anim aliquip voluptate excepteur nisi culpa duis id pariatur irure.',
+      'Deserunt dolor incididunt anim nisi proident laborum dolore nisi magna qui nulla aute nisi dolor. Officia aliquip commodo eu dolore excepteur ipsum duis labore ipsum anim. Ipsum ex cupidatat nisi aliquip in quis consectetur. In nisi ea et Lorem ut. Non consequat reprehenderit enim dolor duis amet duis.',
     description:
       'Excepteur dolore amet officia consequat aliqua non. In in id tempor aute sint aliqua. Amet duis laboris ex sunt. Labore minim occaecat id aliqua duis ad in consectetur duis amet culpa. Magna nulla qui incididunt aute velit nisi dolore laboris ea occaecat. Velit anim consequat non id occaecat reprehenderit veniam amet nisi.',
     media: [
       {
-        src: 'https://picsum.photos/500/500',
+        src: 'https://picsum.photos/500/500?random=2',
         alt: 'placeholder',
         width: 500,
         height: 500,
       },
       {
-        src: 'https://picsum.photos/500/500',
+        src: 'https://picsum.photos/500/500?random=3',
         alt: 'placeholder',
         width: 500,
         height: 500,
       },
       {
-        src: 'https://picsum.photos/500/500',
+        src: 'https://picsum.photos/500/500?random=4',
         alt: 'placeholder',
         width: 500,
         height: 500,
@@ -161,8 +161,8 @@ export const projectData: ProjectCardType[] = [
     ],
   },
   {
-    title: 'Project 1',
-    banner: 'https://picsum.photos/900/900',
+    title: 'To-Do App',
+    banner: 'https://picsum.photos/900/900?random=5',
     bannerAlt: 'a random landscape picture',
     summary:
       'Veniam esse veniam excepteur id cillum duis excepteur nisi et do consectetur. Cillum eu consequat anim aliquip voluptate excepteur nisi culpa duis id pariatur irure.',
@@ -170,25 +170,25 @@ export const projectData: ProjectCardType[] = [
       'Excepteur dolore amet officia consequat aliqua non. In in id tempor aute sint aliqua. Amet duis laboris ex sunt. Labore minim occaecat id aliqua duis ad in consectetur duis amet culpa. Magna nulla qui incididunt aute velit nisi dolore laboris ea occaecat. Velit anim consequat non id occaecat reprehenderit veniam amet nisi.',
     media: [
       {
-        src: 'https://picsum.photos/500/500',
+        src: 'https://picsum.photos/500/500?random=6',
         alt: 'placeholder',
         width: 500,
         height: 500,
       },
       {
-        src: 'https://picsum.photos/500/500',
+        src: 'https://picsum.photos/500/500?random=7',
         alt: 'placeholder',
         width: 500,
         height: 500,
       },
       {
-        src: 'https://picsum.photos/500/500',
+        src: 'https://picsum.photos/500/500?random=8',
         alt: 'placeholder',
         width: 500,
         height: 500,
       },
     ],
-    tags: ['node', 'typescript', 'html', 'sass'],
+    tags: ['redux', 'javascript', 'bootstrap', 'css'],
     links: [
       { name: 'site', path: '', icon: <FontAwesomeIcon icon={faDesktop} /> },
       { name: 'code', path: '', icon: <FontAwesomeIcon icon={faCodeBranch} /> },
