@@ -33,5 +33,10 @@ export interface MediaImageType {
   alt: string;
   height: number;
   width: number;
+  mobileImg?: {
+    src: string;
+    height: number;
+    width: number;
+  }
 }
 
