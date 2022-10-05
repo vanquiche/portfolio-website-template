@@ -39,19 +39,13 @@ I created this for my own personal portfolio website.  If you like what you see,
 npm install
 ```
 
-3. **Copy and rename `exampleProjectData.tsx`**
-
-```sh
-cp sections/exampleProjectData.tsx sections/projectData.tsx
-```
-
-4. **Start development server**
+3. **Start development server**
 
 ```sh
 npm run dev
 ```
 
-5. **Open localhost port:3000 in your browser**
+4. **Open localhost port:3000 in your browser**
 
 ```sh
 http://localhost:3000
