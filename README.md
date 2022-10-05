@@ -17,7 +17,7 @@ I created this for my own personal portfolio website.  If you like what you see,
 
 ## Examples
 
-live site link coming soon...
+Check it out! 👉[Demo](https://stevevangdev.com/)
 
 ![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-20-55_cubmzw.png)
 
