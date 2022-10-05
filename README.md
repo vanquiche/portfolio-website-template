@@ -1,6 +1,6 @@
 # Personal Portfolio Template
 
-I created this for my own personal portfolio website.  If you like what you see, you’re welcome to use this project as a template for your own website. Some of the features that are included in this website:
+I created this for my own personal portfolio website.  If you like what you see, you’re welcome to fork this repo to use as a template for your own website. Some of the features that are included in this website:
 
 - **Light/Dark theme toggle**
 - **Lazy loading of images**
@@ -9,11 +9,10 @@ I created this for my own personal portfolio website.  If you like what you see,
 ## Table of Contents
 
 1. [Examples](#Examples)
-2. [Getting Started](#Getting-Started)
-3. [Tech Stack](#Tech-Stack)
-4. [Motivation](#Motivation)
-5. [Accessibility](#Accessibility)
-6. [License](#License)
+2. [Tech Stack](#Tech-Stack)
+3. [Motivation](#Motivation)
+4. [Accessibility](#Accessibility)
+5. [License](#License)
 
 ## Examples
 
@@ -26,30 +25,6 @@ Check it out! 👉[Demo](https://stevevangdev.com/)
 ![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778786/personal-portfolio-template/Screenshot_2022-10-03_15-21-37_j59gg0.png)
 
 ![desktop screenshot example 4](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-54_bpf5vg.png)
-
-## Getting Started
-
-### Installation
-
-1. **Fork and Clone this repo**
-
-2. **Install dependencies**
-
-```sh
-npm install
-```
-
-3. **Start development server**
-
-```sh
-npm run dev
-```
-
-4. **Open localhost port:3000 in your browser**
-
-```sh
-http://localhost:3000
-```
 
 ## Tech Stack
 - Next.js
