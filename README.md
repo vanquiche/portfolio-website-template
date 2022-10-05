@@ -31,39 +31,27 @@ I created this for my own personal portfolio website.  If you like what you see,
 
 ### Installation
 
-1. **Fork this repo**
+1. **Fork and Clone this repo**
 
-2. **Clone it to your local machine**
-
-```sh
-git clone https://github.com/<your username>/portfolio-website-template.git
-```
-
-3. **Navigate to directory**
-
-```sh
-cd portfolio-website-template/
-```
-
-4. **Install dependencies**
+2. **Install dependencies**
 
 ```sh
 npm install
 ```
 
-5. **Copy and rename `exampleProjectData.tsx`**
+3. **Copy and rename `exampleProjectData.tsx`**
 
 ```sh
 cp sections/exampleProjectData.tsx sections/projectData.tsx
 ```
 
-6. **Start development server**
+4. **Start development server**
 
 ```sh
 npm run dev
 ```
 
-7. **Open localhost port:3000 in your browser**
+5. **Open localhost port:3000 in your browser**
 
 ```sh
 http://localhost:3000
