@@ -17,7 +17,7 @@ I created this for my own personal portfolio website.  If you like what you see,
 
 ## Examples
 
-Check it out! 👉[Demo](https://stevevangdev.com/)
+<!-- Check it out! 👉[Demo](https://stevevangdev.com/) -->
 
 ![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-20-55_cubmzw.png)
 
@@ -31,37 +31,39 @@ Check it out! 👉[Demo](https://stevevangdev.com/)
 
 ### Installation
 
-1. **Clone this repo**
+1. **Fork this repo**
+
+2. **Clone it to your local machine**
 
 ```sh
-git clone https://github.com/vanquiche/portfolio-website-template.git
+git clone https://github.com/<your username>/portfolio-website-template.git
 ```
 
-2. **Navigate to directory**
+3. **Navigate to directory**
 
 ```sh
 cd portfolio-website-template/
 ```
 
-3. **Install dependencies**
+4. **Install dependencies**
 
 ```sh
 npm install
 ```
 
-4. **Copy and rename `exampleProjectData.tsx`**
+5. **Copy and rename `exampleProjectData.tsx`**
 
 ```sh
 cp sections/exampleProjectData.tsx sections/projectData.tsx
 ```
 
-5. **Start development server**
+6. **Start development server**
 
 ```sh
 npm run dev
 ```
 
-6. **Open localhost port:3000 in your browser**
+7. **Open localhost port:3000 in your browser**
 
 ```sh
 http://localhost:3000
