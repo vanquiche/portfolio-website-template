@@ -19,10 +19,10 @@ const ImageGallery = ({ images }: Props) => {
             isMobile && image.mobileImg ? image.mobileImg.height : image.height,
           width:
             isMobile && image.mobileImg ? image.mobileImg.width : image.width,
-          blurDataURL:
-            isMobile && image.mobileImg
-              ? `/_next/image?url=${image.mobileImg.src}&w=16&q=1`
-              : `/_next/image?url=${image.src}&w=16&q=1`,
+          // blurDataURL:
+          //   isMobile && image.mobileImg
+          //     ? `/_next/image?url=${image.mobileImg.src}&w=16&q=1`
+          //     : `/_next/image?url=${image.src}&w=16&q=1`,
         };
         return (
           <span key={i}>
@@ -30,6 +30,7 @@ const ImageGallery = ({ images }: Props) => {
               {...imageData}
               alt={image.alt}
               placeholder='blur'
+              blurDataURL={`/_next/image?url=${image.src}&w=16&q=1`}
             />
           </span>
         );

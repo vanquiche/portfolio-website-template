@@ -67,7 +67,7 @@ const ProjectCard = ({ project }: Props) => {
               <Image
                 src={project.banner}
                 layout='fill'
-                objectFit='cover'
+                objectFit='contain'
                 alt={project.bannerAlt}
               />
             </span>
