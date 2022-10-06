@@ -109,15 +109,15 @@ export const links: NavLinkType[] = [
 export const socialLinks: SocialLinkType[] = [
   {
     icon: <FontAwesomeIcon icon={faGithub} title='github icon' size='2x' />,
-    link: 'github',
+    link: 'https://github.com/vanquiche',
   },
   {
     icon: <FontAwesomeIcon icon={faLinkedin} title='linkedIn icon' size='2x' />,
-    link: 'linkedin',
+    link: 'https://linkedin.com/in/stevevang',
   },
   {
     icon: <FontAwesomeIcon icon={faTwitter} title='twitter icon' size='2x' />,
-    link: 'twitter',
+    link: '',
   },
 ];
 
@@ -216,8 +216,6 @@ export const projectData: ProjectCardType[] = [
       },
       {
         src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_650/v1664362558/kutsu-eCommerce/demo-4_uy1dlv.jpg',
-
-        //c_scale,e_blur:100,h_16,q_auto:low,w_16
         alt: 'checkout page example',
         width: 1283,
         height: 650,
