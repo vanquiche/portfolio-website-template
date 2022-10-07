@@ -47,11 +47,11 @@ const ProjectCard = ({ project }: Props) => {
     setDetailsVisible((prev) => !prev);
   }
 
-  const navigateToLink = (path: string) => () => {
-    if (typeof window !== 'undefined') {
-      window.location.href = path;
-    }
-  };
+  // const navigateToLink = (path: string) => () => {
+  //   if (typeof window !== 'undefined') {
+  //     window.location.href = path;
+  //   }
+  // };
 
   return (
     // container
@@ -89,12 +89,12 @@ const ProjectCard = ({ project }: Props) => {
                       containerStyle={progressBarStyle}
                       animateTo='100%'
                       fixed={isMobile}
-                      onClick={navigateToLink(l.path)}
+                      // onClick={navigateToLink(l.path)}
                     >
-                      <span>
+                      <a href={l.path}>
                         {l.icon && l.icon}
                         {l.name}
-                      </span>
+                      </a>
                     </ProgressBarContainer>
                   );
                 })}
@@ -105,7 +105,7 @@ const ProjectCard = ({ project }: Props) => {
                     fixed={isMobile}
                     onClick={toggleDetails}
                   >
-                    <span>
+                    <span className={styles.detailsButton}>
                       <FontAwesomeIcon
                         icon={detailsVisible ? faCaretDown : faCaretRight}
                         className={styles.projectCardLinkIcon}

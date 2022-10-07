@@ -19,7 +19,7 @@ const Intro = () => {
       <section className={styles.introContainer}>
         <Image
           // link your profile image here
-          src='https://picsum.photos/250/250'
+          src='https://res.cloudinary.com/dvrs8gsj3/image/upload/v1665114283/profile-image-low_prwdkz.jpg'
           height={250}
           width={250}
           alt='profile image'

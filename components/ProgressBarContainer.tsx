@@ -61,7 +61,7 @@ const ProgressBarContainer = ({
   }
 
   return (
-    <button
+    <div
       style={containerStyle}
       className={styles.fillboxContainer}
       onClick={handleClick}
@@ -73,7 +73,7 @@ const ProgressBarContainer = ({
       </div>
 
       <span style={barStyle} className={styles.fillboxBar} ref={barRef} />
-    </button>
+    </div>
   );
 };
 
