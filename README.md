@@ -66,11 +66,13 @@ npm run start
 
 ## Motivation
 
-As much as I love websites with bold designs, flashy transitions and scrolling animations, In my opinion, a portfolio website may not be the place for it (I’ve added some animation to make this site dynamic without being distracting). What I've come to learn is that most people have short attention spans. You’ll risk users skipping your content if your website is confusing or annoying to use. Some things that typically result in a bad user experience (aside from long load times, poor color schemes, and unintuitive navigation/layout) are:
+I love websites with bold designs, flashy transitions and long gorgoeus scrolling animations (I'm looking at you Apple). However, what I've come to learn is that most people cannot stand that stuff. People have short attention spans and you risk users skipping your content if your website is confusing and annoying. Some things that typically result in a bad user experience (aside from long load times, poor color schemes, and unintuitive navigation/layout) are:
 
 - Scroll hijacking (for more info, click [here](https://alvarotrigo.com/blog/what-is-scroll-hijacking/))
 - Slow animation/transitions (anything over 1000ms)
 - Distracting animated backgrounds
+
+I tried my best to adhere to these principles when building this site. It's a no-nonsense site, while still remaining modern in its look and performance.
 
 This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
 
