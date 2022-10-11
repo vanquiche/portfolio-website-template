@@ -29,7 +29,7 @@ Check it out! 👉 [Demo](https://stevevangdev.com/) 🥳
 
 ## Installation
 
-This project uses the scripts provided by the Next.js project. Follow the steps below to get you started.
+This project was bootstrapped with `create-next-app`. It comes with some great scripts out of the box that makes getting started easy. Follow the steps below to run it locally.
 
 1. **Fork this repo and clone it to your local machine**
 
@@ -74,7 +74,7 @@ I love websites with bold designs, flashy transitions and long gorgoeus scrollin
 
 I tried my best to adhere to these principles when building this site. It's a no-nonsense site, while still remaining modern in its look and performance.
 
-This project was bootstrap with Next.js. Next provides some great features out of the box that in my opinion, provides some of the best user and developer experience. Here are some of the features that I love:
+I chose Next.js because it provides some great features out of the box that makes for the best user and developer experience. Here are some of the features that I love:
 
 - **SEO-friendly**: Rich HTML with SSR
 - **Performance Optimization**: Images are lazy loaded, cached, and many other optimizing features!
