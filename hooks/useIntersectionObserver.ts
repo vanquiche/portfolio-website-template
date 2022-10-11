@@ -1,6 +1,6 @@
 import { MutableRefObject, useState, useEffect, useRef } from 'react';
 
-const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>, threshold?: number) => {
+const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>, threshold?: number, cb?: () => void) => {
   const [isVisible, setIsVisible] = useState(false);
   const hasRender = useRef(false)
 
@@ -14,6 +14,7 @@ const useIntersectionObserver = (ref: MutableRefObject<HTMLElement | null>, thre
     setIsVisible(entry.isIntersecting);
     if (entry.isIntersecting) {
       hasRender.current = true;
+      cb && cb();
     }
   }
 
