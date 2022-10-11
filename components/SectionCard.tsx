@@ -13,21 +13,20 @@ interface Props {
 const SectionCard = ({ id, title, children }: Props) => {
   const { setLocation } = useContext(NavLocationContext);
   const ref = useRef<HTMLElement>(null);
-  const { isVisible } = useIntersectionObserver(ref, 0.3);
+  const { isVisible } = useIntersectionObserver(ref, 0.5);
 
-  useEffect(() => {
-    if (isVisible) {
-      setLocation(id);
-    }
-  }, [isVisible, id, setLocation]);
+  if (isVisible) {
+    setLocation(id);
+  }
+
+  // useEffect(() => {
+  //   if (isVisible) {
+  //     setLocation(id);
+  //   }
+  // }, [isVisible, id, setLocation]);
 
   return (
-    <section
-      id={id}
-      title={id}
-      className={styles.layoutContainer}
-      ref={ref}
-    >
+    <section id={id} title={id} className={styles.layoutContainer} ref={ref}>
       <header>
         <h1 id={title} className={styles.shuffleTitle} aria-label={title}>
           {title && <ShuffleTitle title={title} />}
