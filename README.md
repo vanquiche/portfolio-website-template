@@ -6,6 +6,8 @@ I created this for my own personal portfolio website.  If you like what you see,
 - **Lazy loading of images**
 - **Mobile responsive**
 
+Check it out! 👉 [Demo](https://stevevangdev.com/) 🥳
+
 ## Table of Contents
 
 1. [Examples](#Examples)
@@ -17,8 +19,6 @@ I created this for my own personal portfolio website.  If you like what you see,
 
 ## Examples
 
-Check it out! 👉[Demo](https://stevevangdev.com/)
-
 ![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-20-55_cubmzw.png)
 
 ![desktop screenshot example 2](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-24_hfcuwy.png)
@@ -29,7 +29,7 @@ Check it out! 👉[Demo](https://stevevangdev.com/)
 
 ## Installation
 
-This project uses the scripts provided by the Next.js project. Follow the steps below to get you started. 
+This project uses the scripts provided by the Next.js project. Follow the steps below to get you started.
 
 1. **Fork this repo and clone it to your local machine**
 
