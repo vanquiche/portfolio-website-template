@@ -3,34 +3,31 @@ import useIntersectionObserver from '@hooks/useIntersectionObserver';
 import { RandomReveal } from 'react-random-reveal';
 import styles from '@styles/ShuffleTitle.module.sass';
 
+
 interface Props {
   title: string;
 }
 const ShuffleTitle = ({ title }: Props) => {
-  // const [hyrdrated, setHydrated] = useState(false);
+  const [hyrdrated, setHydrated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   const { isVisible } = useIntersectionObserver(ref);
 
-  // useEffect(() => {
-  //   setHydrated(true);
-  // }, []);
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
 
-  // if (!hyrdrated) return null;
+  if (!hyrdrated) return null;
 
   return (
     <div className={styles.titleContainer} ref={ref}>
-      {isVisible ? (
-        <RandomReveal
-          duration={0.85}
-          characters={title}
-          isPlaying={isVisible}
-          aria-hidden={true}
-        />
-      ) : (
-        ''
-      )}
-
+      <RandomReveal
+        key={title}
+        duration={0.85}
+        characters={title}
+        isPlaying={isVisible}
+        aria-hidden={true}
+      />
       <span className={styles.titleUnderscore} />
     </div>
   );
