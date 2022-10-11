@@ -9,10 +9,11 @@ I created this for my own personal portfolio website.  If you like what you see,
 ## Table of Contents
 
 1. [Examples](#Examples)
-2. [Tech Stack](#Tech-Stack)
-3. [Motivation](#Motivation)
-4. [Accessibility](#Accessibility)
-5. [License](#License)
+2. [Installation](#Installation)
+3. [Tech Stack](#Tech-Stack)
+4. [Motivation](#Motivation)
+5. [Accessibility](#Accessibility)
+6. [License](#License)
 
 ## Examples
 
@@ -25,6 +26,35 @@ Check it out! 👉[Demo](https://stevevangdev.com/)
 ![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778786/personal-portfolio-template/Screenshot_2022-10-03_15-21-37_j59gg0.png)
 
 ![desktop screenshot example 4](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-54_bpf5vg.png)
+
+## Installation
+
+1. **Fork this repo and clone it to your local machine**
+
+2. **Install dependencies**
+
+```sh
+npm install
+```
+
+3. **Start local server**
+
+```sh
+npm run dev
+```
+Want to create a test a production build?
+
+**Create build**
+
+```sh
+npm run build
+```
+
+**Serve build**
+
+```sh
+npm run start
+```
 
 ## Tech Stack
 - Next.js
