@@ -10,11 +10,14 @@ interface Props {
 const ShuffleTitle = ({ title }: Props) => {
   const [hyrdrated, setHydrated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-
   const { isVisible } = useIntersectionObserver(ref);
+  const firstMount = useRef(true)
 
   useEffect(() => {
-    setHydrated(true);
+    if (firstMount.current) {
+      firstMount.current = false;
+      setHydrated(true);
+    }
   }, []);
 
   if (!hyrdrated) return null;
