@@ -29,6 +29,8 @@ Check it out! 👉[Demo](https://stevevangdev.com/)
 
 ## Installation
 
+This project uses the scripts provided by the Next.js project. Follow the steps below to get you started. 
+
 1. **Fork this repo and clone it to your local machine**
 
 2. **Install dependencies**
@@ -42,15 +44,15 @@ npm install
 ```sh
 npm run dev
 ```
-Want to create a test a production build?
+For production builds follow the steps below.
 
-**Create build**
+1. **Create build**
 
 ```sh
 npm run build
 ```
 
-**Serve build**
+2. **Serve build**
 
 ```sh
 npm run start
