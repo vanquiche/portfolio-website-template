@@ -77,4 +77,4 @@ const ProgressBarContainer = ({
   );
 };
 
-export default React.memo(ProgressBarContainer);
+export default ProgressBarContainer;
