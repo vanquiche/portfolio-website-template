@@ -33,8 +33,8 @@ const ClipCopy = ({ copy, theme }: Props) => {
   }
 
   const emailContainerStyle: React.CSSProperties = {
-    backgroundColor: isMobile ? theme.color : '',
-    color: isMobile ? theme.backgroundColor : '',
+    backgroundColor: theme.color,
+    color: theme.backgroundColor,
   };
 
   const clipboardMessageStyle: React.CSSProperties = {
@@ -72,8 +72,8 @@ const ClipCopy = ({ copy, theme }: Props) => {
       <button
         className={styles.emailContainer}
         onClick={copyEmail(copy)}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
         style={emailContainerStyle}
       >
         <div ref={contentRef} style={contentStyle}>
