@@ -65,8 +65,8 @@ const ProgressBarContainer = ({
       style={containerStyle}
       className={styles.fillboxContainer}
       onClick={handleClick}
-      onMouseEnter={fixed ? undefined : invertColor}
-      onMouseLeave={fixed ? undefined : resetColor}
+      // onMouseEnter={fixed ? undefined : invertColor}
+      // onMouseLeave={fixed ? undefined : resetColor}
     >
       <div style={contentStyle} ref={contentContainer}>
         {children}

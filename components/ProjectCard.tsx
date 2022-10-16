@@ -9,7 +9,7 @@ import Tags from '@components/Tags';
 import ProgressBarContainer from '@components/ProgressBarContainer';
 // types
 import { ProjectCardType } from 'types';
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 // styles
 import styles from '@styles/ProjectCard.module.sass';
 import ImageGallery from './ImageGallery';
@@ -20,7 +20,7 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
   const [detailsVisible, setDetailsVisible] = useState(false);
-  const isMobile = useMediaQuery({ query: '(max-width: 675px)' });
+  // const isMobile = useMediaQuery({ query: '(max-width: 675px)' });
   const nodeRef = useRef(null);
   const duration = 175;
 
@@ -88,7 +88,7 @@ const ProjectCard = ({ project }: Props) => {
                       key={i}
                       containerStyle={progressBarStyle}
                       animateTo='100%'
-                      fixed={isMobile}
+                      fixed={true}
                       // onClick={navigateToLink(l.path)}
                     >
                       <a href={l.path}>
@@ -102,7 +102,7 @@ const ProjectCard = ({ project }: Props) => {
                   <ProgressBarContainer
                     containerStyle={progressBarStyle}
                     animateTo='100%'
-                    fixed={isMobile}
+                    fixed={true}
                     onClick={toggleDetails}
                   >
                     <span className={styles.detailsButton}>
