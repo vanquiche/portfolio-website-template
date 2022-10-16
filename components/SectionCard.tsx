@@ -13,8 +13,8 @@ interface Props {
 const SectionCard = ({ id, title, children }: Props) => {
   const { setLocation } = useContext(NavLocationContext);
   const ref = useRef<HTMLElement>(null);
-  const updateNavLocation = () => setLocation(id);
-  const { isVisible } = useIntersectionObserver(ref, 0.5, updateNavLocation);
+  // const updateNavLocation = () => setLocation(id);
+  // const { isVisible } = useIntersectionObserver(ref, 0.25, updateNavLocation);
 
   // if (isVisible) {
   //   setLocation(id);

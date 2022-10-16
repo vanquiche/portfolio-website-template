@@ -204,7 +204,7 @@ export const projectData: ProjectCardType[] = [
         width: 1283,
         height: 650,
         mobileImg: {
-          src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_650/v1664881765/kutsu-eCommerce/kutsu-mobile-demo2_cf3tcv.png',
+          src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,h_650/v1664881764/kutsu-eCommerce/kutsu-mobile-demo1_ruowh2.png',
           width: 365,
           height: 650,
         },
