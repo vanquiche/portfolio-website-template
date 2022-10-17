@@ -117,7 +117,7 @@ export const socialLinks: SocialLinkType[] = [
   },
   {
     icon: <FontAwesomeIcon icon={faTwitter} title='twitter icon' size='2x' />,
-    link: '',
+    link: 'https://twitter.com/stevevangdev',
   },
 ];
 
