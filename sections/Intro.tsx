@@ -27,8 +27,8 @@ const Intro = () => {
         <div>
           <p>
             {/* add your text here */}
-            <b>Hello!</b> My name is
-            <span className={styles.myName}> Steve Vang</span>{' '}
+            <span className={styles.hello}><b>Hello!</b> My name is</span>
+            <span className={styles.myName}>Steve Vang</span>
             {/* <br /> */}
             I&apos;m a<b> Frontend Developer </b>
             and I build cool things for the web. <b>Javascript</b>, <b>React</b>
