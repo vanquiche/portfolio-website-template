@@ -15,7 +15,7 @@ const Intro = () => {
 
   return (
     // change your title and section id
-    <SectionCard id='intro' title='WhoAmI?'>
+    <SectionCard id='intro' title='ABOUT'>
       <section className={styles.introContainer}>
         <Image
           // link your profile image here

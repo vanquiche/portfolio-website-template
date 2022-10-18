@@ -7,7 +7,7 @@ import { skillcard_Languages, skillcard_Styles, skillcard_Frameworks } from '@se
 const Skills = () => {
   return (
     // change your title and section id
-    <SectionCard id='skills' title='$OFTWARE'>
+    <SectionCard id='skills' title='TOOLS'>
       <article className={styles.skillContainer}>
         {/* <p className={styles.articleDescription}>
           Ipsum minim exercitation excepteur officia anim. Mollit anim cupidatat aliqua duis exercitation dolor ex irure voluptate veniam Lorem non. Sunt laboris voluptate et officia amet.

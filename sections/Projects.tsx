@@ -7,7 +7,7 @@ import styles from '@styles/Project.module.sass';
 const Projects = () => {
   return (
     // change your title and section id
-    <SectionCard id='projects' title='{ PROJECTS }'>
+    <SectionCard id='projects' title='PROJECTS'>
       <div>
         {/* change your project description here */}
         {/* <p className={styles.articleDescription}>
