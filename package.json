@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/archivo-black": "^4.5.9",
+    "@fontsource/ubuntu": "^4.5.11",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
