@@ -15,7 +15,7 @@ const PageCount = ({ count }: Props) => {
   };
   return (
     <div ref={ref} className={styles.container} style={animateStyle}>
-      <span>{count}</span>
+      <span style={{fontFamily: 'Archivo Black, sans-serif'}}>{count}</span>
     </div>
   );
 };
