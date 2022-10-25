@@ -1,11 +1,10 @@
-// icons
 import {
-  faMessages,
   faRobot,
-  faCodeSimple,
-  faNote,
-  faDesktop,
+  faBrowser,
+  faSquareCode,
   faCodeBranch,
+  faUpRightFromSquare,
+  faComments
 } from '@fortawesome/sharp-solid-svg-icons';
 import {
   faReact,
@@ -72,7 +71,7 @@ export const links: NavLinkType[] = [
     path: '#skills',
     icon: (
       <FontAwesomeIcon
-        icon={faCodeSimple}
+        icon={faSquareCode}
         title='scroll to section: software'
         size='lg'
       />
@@ -83,7 +82,7 @@ export const links: NavLinkType[] = [
     path: '#projects',
     icon: (
       <FontAwesomeIcon
-        icon={faNote}
+        icon={faBrowser}
         title='scroll to section: projects'
         size='lg'
       />
@@ -94,7 +93,7 @@ export const links: NavLinkType[] = [
     path: '#contact',
     icon: (
       <FontAwesomeIcon
-        icon={faMessages}
+        icon={faComments}
         title='scroll to section: contact'
         size='lg'
       />
@@ -170,7 +169,7 @@ export const projectData: ProjectCardType[] = [
       {
         name: 'site',
         path: 'https://apps.apple.com/us/app/flip-flashcard/id1637560175?l=en',
-        icon: <FontAwesomeIcon icon={faDesktop} />,
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
       },
       {
         name: 'code',
@@ -237,7 +236,7 @@ export const projectData: ProjectCardType[] = [
       {
         name: 'site',
         path: 'https://kutsu-shop.netlify.app/',
-        icon: <FontAwesomeIcon icon={faDesktop} />,
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
       },
       {
         name: 'code',

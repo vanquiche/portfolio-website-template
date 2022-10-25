@@ -5,11 +5,9 @@ import { Transition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 // components
-import Tags from '@components/Tags';
 import ProgressBarContainer from '@components/ProgressBarContainer';
 // types
 import { ProjectCardType } from 'types';
-// import { useMediaQuery } from 'react-responsive';
 // styles
 import styles from '@styles/ProjectCard.module.sass';
 import ImageGallery from './ImageGallery';
@@ -20,7 +18,6 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
   const [detailsVisible, setDetailsVisible] = useState(false);
-  // const isMobile = useMediaQuery({ query: '(max-width: 675px)' });
   const nodeRef = useRef(null);
   const duration = 175;
 
@@ -46,12 +43,6 @@ const ProjectCard = ({ project }: Props) => {
   function toggleDetails() {
     setDetailsVisible((prev) => !prev);
   }
-
-  // const navigateToLink = (path: string) => () => {
-  //   if (typeof window !== 'undefined') {
-  //     window.location.href = path;
-  //   }
-  // };
 
   return (
     // container
