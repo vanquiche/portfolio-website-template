@@ -76,6 +76,11 @@ const ProjectCard = ({ project }: Props) => {
 
           <h3>{project.summary}</h3>
 
+          {/* <div className={styles.tagsContainer}>
+            {project.tags &&
+              project.tags.map((p, i) => <Tags tag={p} key={i} />)}
+          </div> */}
+
           <div className={styles.projectCardDetails}>
             <div>
               <div
@@ -110,7 +115,7 @@ const ProjectCard = ({ project }: Props) => {
                         icon={detailsVisible ? faCaretDown : faCaretRight}
                         className={styles.projectCardLinkIcon}
                       />
-                      {detailsVisible ? 'close' : 'details'}
+                      {detailsVisible ? 'close' : 'media'}
                     </span>
                   </ProgressBarContainer>
                 )}
@@ -136,10 +141,6 @@ const ProjectCard = ({ project }: Props) => {
                   {project.description && <p>{project.description}</p>}
                   {project.media && <ImageGallery images={project.media} />}
                   {/* tags container */}
-                  <div className={styles.tagsContainer}>
-                    {project.tags &&
-                      project.tags.map((p, i) => <Tags tag={p} key={i} />)}
-                  </div>
                 </div>
               )}
             </Transition>

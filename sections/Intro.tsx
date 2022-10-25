@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import SectionCard from '@components/SectionCard';
 import styles from '@styles/Intro.module.sass';
+import BgTitle from '@components/BgTitle';
 
 const Intro = () => {
   function scrollToContact(e: React.MouseEvent<HTMLAnchorElement>) {
@@ -16,14 +17,11 @@ const Intro = () => {
   return (
     // change your title and section id
     <SectionCard id='intro' title='ABOUT'>
-      <section className={styles.introContainer}>
-        <Image
-          // link your profile image here
-          src='https://res.cloudinary.com/dvrs8gsj3/image/upload/v1665114283/profile-image-low_prwdkz.jpg'
-          height={250}
-          width={250}
-          alt='profile image'
-        />
+      <article
+        className={styles.introContainer}
+        style={{ position: 'relative' }}
+      >
+        <BgTitle title='ABOUT' />
         <div>
           <p>
             {/* add your text here */}
@@ -37,10 +35,10 @@ const Intro = () => {
           </p>
           Did I just pique your interest? Let&apos;s{' '}
           <a onClick={scrollToContact}>
-            <b>chat 💬</b>
+            <b style={{ textDecoration: 'underline' }}>chat </b>💬
           </a>{' '}
         </div>
-      </section>
+      </article>
     </SectionCard>
   );
 };

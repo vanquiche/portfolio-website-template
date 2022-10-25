@@ -5,6 +5,7 @@ import { socialLinks } from '@sections/projectData';
 import ClipCopy from '@components/ClipCopy';
 // styles
 import styles from '@styles/Contact.module.sass';
+import BgTitle from '@components/BgTitle';
 
 const Contact = () => {
   const { themeStyle } = useContext(ThemeContext);
@@ -12,10 +13,11 @@ const Contact = () => {
   return (
     // change your title and section id
     <SectionCard id='contact' title='CONTACT'>
-      <article>
+      <article style={{position: 'relative'}}>
+        <BgTitle title='CONTACT' />
         <p className={styles.articleDescription}>
           {/* change your contact description */}
-          Looking for an awesome <b>Frontend Developer</b>? I&apos;m{' '}
+          Looking for an awesome <b>Frontend Developer</b>?<br /> I&apos;m{' '}
           <b>available</b> and looking to mingle! Hit me up and let&apos;s see
           if we&apos;re a match. 💕
         </p>
