@@ -19,13 +19,13 @@ Check it out! 👉 [Demo](https://stevevangdev.com/) 🥳
 
 ## Examples
 
-![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-20-55_cubmzw.png)
+![desktop screenshot example 1](https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,w_1200/v1666690716/personal-portfolio-template/portfolio-example-1_l5ulqr.png)
 
-![desktop screenshot example 2](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-24_hfcuwy.png)
+![desktop screenshot example 2](https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,w_1200/v1666690715/personal-portfolio-template/portfolio-example-2_nv2bve.png)
 
-![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778786/personal-portfolio-template/Screenshot_2022-10-03_15-21-37_j59gg0.png)
+![desktop screenshot example 3](https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,w_1200/v1666690716/personal-portfolio-template/portfolio-example-3_onq4vq.png)
 
-![desktop screenshot example 4](https://res.cloudinary.com/dvrs8gsj3/image/upload/v1664778785/personal-portfolio-template/Screenshot_2022-10-03_15-21-54_bpf5vg.png)
+![desktop screenshot example 4](https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,w_1200/v1666690715/personal-portfolio-template/portfolio-example-4_yba0yg.png)
 
 ## Installation
 
