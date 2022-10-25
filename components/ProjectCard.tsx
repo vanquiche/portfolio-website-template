@@ -56,7 +56,12 @@ const ProjectCard = ({ project }: Props) => {
   return (
     // container
     <article>
-      <h2 className={styles.projectCardTitle}>{project.title.toUpperCase()}</h2>
+      <h2
+        className={styles.projectCardTitle}
+        style={{ fontFamily: 'Archivo Black, sans-serif' }}
+      >
+        {project.title.toUpperCase()}
+      </h2>
       <div className={styles.projectCardContainer}>
         {/* card */}
 
@@ -74,7 +79,7 @@ const ProjectCard = ({ project }: Props) => {
           )}
           {/* description */}
 
-          <h3 style={{fontFamily: 'Archivo Black, sans-serif'}}>{project.summary}</h3>
+          <h3>{project.summary}</h3>
 
           {/* <div className={styles.tagsContainer}>
             {project.tags &&
