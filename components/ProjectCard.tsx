@@ -74,7 +74,7 @@ const ProjectCard = ({ project }: Props) => {
           )}
           {/* description */}
 
-          <h3>{project.summary}</h3>
+          <h3 style={{fontFamily: 'Archivo Black, sans-serif'}}>{project.summary}</h3>
 
           {/* <div className={styles.tagsContainer}>
             {project.tags &&
