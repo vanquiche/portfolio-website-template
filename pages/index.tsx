@@ -13,6 +13,10 @@ import Projects from '@sections/Projects';
 import Contact from '@sections/Contact';
 import Footer from '@components/Footer';
 
+// fonts
+import '@fontsource/archivo-black';
+import '@fontsource/ubuntu';
+
 const Home: NextPage = () => {
   const [theme, setTheme] = useState(ThemeOptions.Dark);
   const [location, setLocation] = useState('');

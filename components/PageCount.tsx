@@ -1,25 +1,23 @@
 import React, { useRef } from 'react';
-import styles from '@styles/BgTitle.module.sass';
+import styles from '@styles/PageCount.module.sass';
 import useIntersectionObserver from '@hooks/useIntersectionObserver';
-// import '@fontsource/archivo-black';
 
 interface Props {
-  title: string;
+  count: string;
 }
 
-const BgTitle = ({ title }: Props) => {
+const PageCount = ({ count }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const { isVisible } = useIntersectionObserver(ref);
   const animateStyle: React.CSSProperties = {
     opacity: isVisible ? 0.3 : 0,
     transition: 'opacity 700ms ease-out',
   };
-
   return (
-    <header className={styles.container} ref={ref} style={animateStyle}>
-      <h1 className={styles.title} style={{fontFamily: 'Archivo Black, sans-serif'}}>{title}</h1>
-    </header>
+    <div ref={ref} className={styles.container} style={animateStyle}>
+      <span>{count}</span>
+    </div>
   );
 };
 
-export default BgTitle;
+export default PageCount;

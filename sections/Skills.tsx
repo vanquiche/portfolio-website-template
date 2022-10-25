@@ -8,7 +8,7 @@ import BgTitle from '@components/BgTitle';
 const Skills = () => {
   return (
     // change your title and section id
-    <SectionCard id='skills' title='TOOLS'>
+    <SectionCard id='skills' title='TOOLS' page='02'>
       <article className={styles.skillContainer} style={{position: 'relative'}}>
         <BgTitle title='TOOLS' />
         {/* <p className={styles.articleDescription}>

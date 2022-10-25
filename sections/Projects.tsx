@@ -8,7 +8,7 @@ import BgTitle from '@components/BgTitle';
 const Projects = () => {
   return (
     // change your title and section id
-    <SectionCard id='projects' title='PROJECTS'>
+    <SectionCard id='projects' title='PROJECTS' page='03'>
       <div style={{position: 'relative'}}>
         <BgTitle title='WORK' />
         {/* change your project description here */}
