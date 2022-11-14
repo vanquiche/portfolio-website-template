@@ -32,7 +32,7 @@ const Contact = () => {
                 href={s.link}
                 aria-label={`navigate to ${s.link}`}
                 className={styles.link}
-                data-socialLinks={s.title}
+                data-social-links={s.title}
               >
                 {s.icon}
               </a>
