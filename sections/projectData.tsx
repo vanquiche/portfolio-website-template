@@ -4,7 +4,7 @@ import {
   faSquareCode,
   faCodeBranch,
   faUpRightFromSquare,
-  faComments
+  faComments,
 } from '@fortawesome/sharp-solid-svg-icons';
 import {
   faReact,
@@ -56,7 +56,7 @@ export const darkTheme = {
 // make sure the path name matches your section id so the window can scroll to each section
 export const links: NavLinkType[] = [
   {
-    name: 'me',
+    name: 'intro',
     path: '#intro',
     icon: (
       <FontAwesomeIcon
@@ -107,16 +107,19 @@ export const links: NavLinkType[] = [
 // add your social buttons here
 export const socialLinks: SocialLinkType[] = [
   {
-    icon: <FontAwesomeIcon icon={faGithub} title='github icon' size='2x' />,
+    icon: <FontAwesomeIcon icon={faGithub} title='github' size='2x' />,
     link: 'https://github.com/vanquiche',
+    title: 'github',
   },
   {
-    icon: <FontAwesomeIcon icon={faLinkedin} title='linkedIn icon' size='2x' />,
+    icon: <FontAwesomeIcon icon={faLinkedin} title='linkedIn' size='2x' />,
     link: 'https://linkedin.com/in/stevevang',
+    title: 'linkedIn',
   },
   {
-    icon: <FontAwesomeIcon icon={faTwitter} title='twitter icon' size='2x' />,
+    icon: <FontAwesomeIcon icon={faTwitter} title='twitter' size='2x' />,
     link: 'https://twitter.com/stevevangdev',
+    title: 'twitter',
   },
 ];
 
@@ -257,68 +260,68 @@ export const skillcard_Styles: SkillItemType[] = [
   {
     text: 'JavaScript',
     icon: <FontAwesomeIcon icon={faJs} size='2x' />,
-    skillLevel: '90%',
+    skillLevel: '100%',
   },
   {
     text: 'TypeScript',
-    icon: <CustomIcon path='/icons/typescript.png' size={43} />,
-    skillLevel: '80%',
+    icon: <CustomIcon path='/icons/typescript-icon.png' size={45} />,
+    skillLevel: '100%',
   },
   {
     text: 'React',
     icon: <FontAwesomeIcon icon={faReact} size='2x' />,
-    skillLevel: '85%',
+    skillLevel: '100%',
   },
   {
     text: 'Next',
     icon: <CustomIcon path='/icons/next-js.256x256.png' size={46} />,
-    skillLevel: '65%',
+    skillLevel: '100%',
   },
 ];
 
 export const skillcard_Languages: SkillItemType[] = [
   {
-    text: 'HTML',
+    text: 'HTML5',
     icon: <FontAwesomeIcon icon={faHtml5} size='2x' />,
-    skillLevel: '95%',
+    skillLevel: '100%',
   },
   {
     text: 'CSS',
     icon: <FontAwesomeIcon icon={faCss3} size='2x' />,
-    skillLevel: '95%',
+    skillLevel: '100%',
   },
 
   {
     text: 'SASS',
     icon: <FontAwesomeIcon icon={faSass} size='2x' />,
-    skillLevel: '90%',
+    skillLevel: '100%',
   },
   {
-    text: 'Bootstrap',
-    icon: <FontAwesomeIcon icon={faBootstrap} size='2x' />,
-    skillLevel: '80%',
+    text: 'Tailwind',
+    icon: <CustomIcon path='/icons/tailwind-icon.png' size={45} />,
+    skillLevel: '100%',
   },
 ];
 
 export const skillcard_Frameworks: SkillItemType[] = [
   {
-    text: 'React Native',
-    icon: <FontAwesomeIcon icon={faReact} size='2x' />,
-    skillLevel: '85%',
-  },
-  {
-    text: 'Expo',
-    icon: <CustomIcon path='/icons/expo.png' size={45} />,
-    skillLevel: '80%',
-  },
-  {
     text: 'Redux',
     icon: <CustomIcon path='/icons/icons8-redux-150.png' size={39} />,
-    skillLevel: '75%',
+    skillLevel: '100%',
   },
   {
     text: 'Node',
     icon: <FontAwesomeIcon icon={faNodeJs} size='2x' />,
-    skillLevel: '60%',
+    skillLevel: '100%',
+  },
+  {
+    text: 'Cypress',
+    icon: <CustomIcon path='/icons/cypress-icon.png' size={40} />,
+    skillLevel: '100%',
+  },
+  {
+    text: 'Jest',
+    icon: <CustomIcon path='/icons/jest-icon.png' size={45} />,
+    skillLevel: '100%',
   },
 ];
