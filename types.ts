@@ -26,6 +26,7 @@ export interface SkillItemType {
 export interface SocialLinkType {
   icon: ReactElement;
   link: string;
+  title: string;
 }
 
 export interface MediaImageType {
@@ -37,6 +38,5 @@ export interface MediaImageType {
     src: string;
     height: number;
     width: number;
-  }
+  };
 }
-

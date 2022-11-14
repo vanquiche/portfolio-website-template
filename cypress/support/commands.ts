@@ -35,3 +35,23 @@
 //     }
 //   }
 // }
+
+Cypress.Commands.add('inViewport', (element, inView) => {
+  cy.get(element).within(($el) => {
+    const screenHeight = cy.state('window').innerHeight;
+    cy.wait(1000).then(() => {
+      const rect = $el[0].getBoundingClientRect();
+      if (inView) {
+        // element is near top of viewport
+        expect(rect.top).to.be.closeTo(0, 100);
+      } else {
+        // element is below viewport
+        expect(rect.top).to.be.greaterThan(screenHeight);
+      }
+    });
+  });
+});
+
+Cypress.Commands.add('getByData', (key, value) => {
+  return cy.get(`[data-${key}="${value}"]`);
+});

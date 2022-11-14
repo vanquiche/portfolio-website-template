@@ -34,10 +34,7 @@ const Navbar = ({ links }: Props) => {
 
   return (
     <header>
-      <nav
-        className={styles.navbar}
-        style={themeStyle}
-      >
+      <nav className={styles.navbar} style={themeStyle}>
         {links.map((l, i) => {
           return (
             <span className={styles.linkContainer} key={i}>
@@ -50,6 +47,7 @@ const Navbar = ({ links }: Props) => {
                 onClick={handleClick(l.path)}
                 aria-label={l.name}
                 className={styles.link}
+                data-navitem={l.name}
               >
                 {l.icon}
               </button>
