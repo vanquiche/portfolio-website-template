@@ -2,14 +2,21 @@ import React from 'react';
 import SectionCard from '@components/SectionCard';
 import SkillCard from '@components/SkillCard';
 import styles from '@styles/Skills.module.sass';
-import { skillcard_Languages, skillcard_Styles, skillcard_Frameworks } from '@sections/projectData'
+import {
+  skillcard_Languages,
+  skillcard_Styles,
+  skillcard_Frameworks,
+} from '@sections/me';
 import BgTitle from '@components/BgTitle';
 
 const Skills = () => {
   return (
     // change your title and section id
     <SectionCard id='skills' title='TOOLS' page='02'>
-      <article className={styles.skillContainer} style={{position: 'relative'}}>
+      <article
+        className={styles.skillContainer}
+        style={{ position: 'relative' }}
+      >
         <BgTitle title='TOOLS' />
         {/* <p className={styles.articleDescription}>
           Ipsum minim exercitation excepteur officia anim. Mollit anim cupidatat aliqua duis exercitation dolor ex irure voluptate veniam Lorem non. Sunt laboris voluptate et officia amet.

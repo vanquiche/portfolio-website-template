@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useMemo, useState } from 'react';
 import ThemeContext, { ThemeOptions } from '@contexts/ThemeContext';
 import NavLocationContext from '@contexts/NavLocationContext';
-import { lightTheme, darkTheme, links } from '@sections/projectData';
+import { lightTheme, darkTheme, links } from '@sections/me';
 
 // components
 import Intro from '@sections/Intro';

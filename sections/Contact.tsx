@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import SectionCard from '@components/SectionCard';
 import ThemeContext from '@contexts/ThemeContext';
-import { socialLinks } from '@sections/projectData';
+import { socialLinks } from '@sections/me';
 import ClipCopy from '@components/ClipCopy';
 // styles
 import styles from '@styles/Contact.module.sass';
