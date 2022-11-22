@@ -17,43 +17,39 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons'; // types
 
-// types
 import {
   NavLinkType,
   ProjectCardType,
   SkillItemType,
   SocialLinkType,
-} from 'types';
-// icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CustomIcon from '@components/CustomIcon';
+} from 'types'; // icons
 
-//
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CustomIcon from '@components/CustomIcon'; //
 // COPY THIS FILE AND RENAME IT TO 'projectData' and add your own data
 //
 //
 // THEMES
 //
 // change your theme colors here
+
 export const lightTheme = {
   // font-color
   color: '#293241',
   // background-color
   backgroundColor: '#f0efeb',
 };
-
 export const darkTheme = {
   color: '#6EDB93',
   backgroundColor: '#0b132b',
-};
-
-//
+}; //
 // NAVIGATION
 //
 // add your navbar items here
 // make sure the path name matches your section id so the window can scroll to each section
+
 export const links: NavLinkType[] = [
   {
     name: 'intro',
@@ -99,12 +95,11 @@ export const links: NavLinkType[] = [
       />
     ),
   },
-];
-
-//
+]; //
 // SOCIAL LINKS
 //
 // add your social buttons here
+
 export const socialLinks: SocialLinkType[] = [
   {
     icon: <FontAwesomeIcon icon={faGithub} title='github' size='2x' />,
@@ -121,13 +116,47 @@ export const socialLinks: SocialLinkType[] = [
     link: 'https://twitter.com/stevevangdev',
     title: 'twitter',
   },
-];
-
-//
+]; //
 // PROJECT CARDS
 //
 // add your project data object into this array
+
 export const projectData: ProjectCardType[] = [
+  {
+    title: 'Server-side form Validation',
+    banner:
+      'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1669098404/walkie-buddy/walkie-buddy-textlogo_eovttm.png',
+    bannerAlt: 'walkie buddy banner',
+    summary:
+      "A simple form with server-side validation and sanitation. The server was built using Express and validates submissions through its routes. The front-end was bootstrapped with create-react-app and styled with Tailwind CSS. The demo is deployed on Render's free tier and may take up to 30 seconds to start up.",
+    media: [
+      // {
+      //   src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,w_700/v1669101073/walkie-buddy/walkie-buddy-demo1_ovtder.png',
+      //   alt: 'demo 1',
+      //   width: 700,
+      //   height: 356,
+      // },
+      {
+        src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1668926577/walkie-buddy/chrome-capture-2022-10-20_xcxjba.gif',
+        alt: 'demo gif',
+        width: 475,
+        height: 530,
+      },
+    ],
+    tags: ['react', 'typescript', 'node.js', 'express', 'tailwind'],
+    links: [
+      {
+        name: 'site',
+        path: 'https://walkie-buddy.onrender.com/',
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: 'code',
+        path: 'https://github.com/vanquiche/server-side-validation',
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
   {
     title: 'Flashcard App',
     banner:
@@ -248,14 +277,13 @@ export const projectData: ProjectCardType[] = [
       },
     ],
   },
-];
-
-//
+]; //
 // SKILL CARDS
 //
 // change your skill cards here
 // each item will be a column of cards
 // create as many or as few as you like
+
 export const skillcard_Styles: SkillItemType[] = [
   {
     text: 'JavaScript',
@@ -278,7 +306,6 @@ export const skillcard_Styles: SkillItemType[] = [
     skillLevel: '100%',
   },
 ];
-
 export const skillcard_Languages: SkillItemType[] = [
   {
     text: 'HTML5',
@@ -290,7 +317,6 @@ export const skillcard_Languages: SkillItemType[] = [
     icon: <FontAwesomeIcon icon={faCss3} size='2x' />,
     skillLevel: '100%',
   },
-
   {
     text: 'SASS',
     icon: <FontAwesomeIcon icon={faSass} size='2x' />,
@@ -302,7 +328,6 @@ export const skillcard_Languages: SkillItemType[] = [
     skillLevel: '100%',
   },
 ];
-
 export const skillcard_Frameworks: SkillItemType[] = [
   {
     text: 'Redux',
