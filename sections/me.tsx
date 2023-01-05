@@ -123,36 +123,36 @@ export const socialLinks: SocialLinkType[] = [
 
 export const projectData: ProjectCardType[] = [
   {
-    title: 'Server-side form Validation',
+    title: 'Task-List App',
     banner:
-      'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1669098404/walkie-buddy/walkie-buddy-textlogo_eovttm.png',
-    bannerAlt: 'walkie buddy banner',
+      'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1672896943/today-task/today-logo_kxwvli.png',
+    bannerAlt: 'Today task banner',
     summary:
-      "A simple form with server-side validation and sanitation. The server was built using Express and validates submissions through its routes. The front-end was bootstrapped with create-react-app and styled with Tailwind CSS. The demo is deployed on Render's free tier and may take up to 30 seconds to start up.",
+      "Today is a simple task list app that is designed to help you quickly focus on today's tasks without the hindrance of overwhelming options. Created in Vue 3 with TypeScript and Pinia for state management.",
     media: [
       // {
-      //   src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/c_scale,w_700/v1669101073/walkie-buddy/walkie-buddy-demo1_ovtder.png',
-      //   alt: 'demo 1',
-      //   width: 700,
-      //   height: 356,
+      //   src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1672664079/today-task/today-demo-1_yhio3z.png',
+      //   alt: 'today demo 1',
+      //   width: 866,
+      //   height: 935,
       // },
       {
-        src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1668926577/walkie-buddy/chrome-capture-2022-10-20_xcxjba.gif',
-        alt: 'demo gif',
-        width: 475,
-        height: 530,
+        src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1672898156/today-task/today-demo-2_a6jmvs.gif',
+        alt: 'today demo 2',
+        width: 917,
+        height: 921,
       },
     ],
-    tags: ['react', 'typescript', 'node.js', 'express', 'tailwind'],
+    tags: ['vue', 'typescript', 'pinia'],
     links: [
       {
         name: 'site',
-        path: 'https://walkie-buddy.onrender.com/',
+        path: 'https://todaytasklist.netlify.app/',
         icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
       },
       {
         name: 'code',
-        path: 'https://github.com/vanquiche/server-side-validation',
+        path: 'https://github.com/vanquiche/today-task',
         icon: <FontAwesomeIcon icon={faCodeBranch} />,
       },
     ],
