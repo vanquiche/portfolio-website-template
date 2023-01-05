@@ -1,11 +1,11 @@
 import {
   faRobot,
-  faBrowser,
-  faSquareCode,
+  faWindowMaximize,
+  faFileCode,
   faCodeBranch,
   faUpRightFromSquare,
   faComments,
-} from '@fortawesome/sharp-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faReact,
   faHtml5,
@@ -67,7 +67,7 @@ export const links: NavLinkType[] = [
     path: '#skills',
     icon: (
       <FontAwesomeIcon
-        icon={faSquareCode}
+        icon={faFileCode}
         title='scroll to section: software'
         size='lg'
       />
@@ -78,7 +78,7 @@ export const links: NavLinkType[] = [
     path: '#projects',
     icon: (
       <FontAwesomeIcon
-        icon={faBrowser}
+        icon={faWindowMaximize}
         title='scroll to section: projects'
         size='lg'
       />
@@ -130,12 +130,6 @@ export const projectData: ProjectCardType[] = [
     summary:
       "Today is a simple task list app that is designed to help you quickly focus on today's tasks without the hindrance of overwhelming options. Created in Vue 3 with TypeScript and Pinia for state management.",
     media: [
-      // {
-      //   src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1672664079/today-task/today-demo-1_yhio3z.png',
-      //   alt: 'today demo 1',
-      //   width: 866,
-      //   height: 935,
-      // },
       {
         src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1672898156/today-task/today-demo-2_a6jmvs.gif',
         alt: 'today demo 2',

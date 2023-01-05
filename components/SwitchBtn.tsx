@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Switch from 'react-switch';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
-import { faSunBright } from '@fortawesome/sharp-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
   onChange: (checked: boolean) => void;
@@ -38,7 +38,7 @@ const SwitchBtn = ({ onChange, color }: Props) => {
         checked={isChecked}
         uncheckedIcon={
           <FontAwesomeIcon
-            icon={faSunBright}
+            icon={faSun}
             style={sunStyle}
             color='black'
             title='light-mode'

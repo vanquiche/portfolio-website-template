@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy } from '@fortawesome/sharp-solid-svg-icons';
+import { faCopy } from '@fortawesome/free-solid-svg-icons';
 import debounce from 'lodash.debounce';
 import styles from '@styles/ClipCopy.module.sass';
 
@@ -30,7 +30,7 @@ const ClipCopy = ({ copy, theme }: Props) => {
       setMessageOpacity(1);
       hideMessage();
     }
-  }
+  };
 
   const emailContainerStyle: React.CSSProperties = {
     backgroundColor: theme.color,
@@ -65,7 +65,10 @@ const ClipCopy = ({ copy, theme }: Props) => {
     }
   }
   return (
-    <section className={styles.messageEmailWrapper} aria-label='copy to clipboard'>
+    <section
+      className={styles.messageEmailWrapper}
+      aria-label='copy to clipboard'
+    >
       <p className={styles.clipboardMessage} style={clipboardMessageStyle}>
         Copied to clipboard!
       </p>
