@@ -123,6 +123,35 @@ export const socialLinks: SocialLinkType[] = [
 
 export const projectData: ProjectCardType[] = [
   {
+    title: 'Server-side form validation',
+    banner:
+      'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1669098404/walkie-buddy/walkie-buddy-textlogo_eovttm.png',
+    bannerAlt: 'walkie buddy banner',
+    summary:
+      "Walkie Buddy is a sign-up form with server-side sanitation and validation. This project leverages the power of NextJS' API Routes and styled with TailwindCSS.",
+    media: [
+      {
+        src: 'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1668926577/walkie-buddy/chrome-capture-2022-10-20_xcxjba.gif',
+        alt: 'walkie buddy demo',
+        width: 475,
+        height: 530,
+      },
+    ],
+    tags: ['NextJS', 'Typescript', 'TailwindCSS'],
+    links: [
+      {
+        name: 'site',
+        path: 'https://walkie-buddy.vercel.app/',
+        icon: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+      },
+      {
+        name: 'code',
+        path: 'https://github.com/vanquiche/server-side-validation',
+        icon: <FontAwesomeIcon icon={faCodeBranch} />,
+      },
+    ],
+  },
+  {
     title: 'Task-List App',
     banner:
       'https://res.cloudinary.com/dvrs8gsj3/image/upload/v1672896943/today-task/today-logo_kxwvli.png',
