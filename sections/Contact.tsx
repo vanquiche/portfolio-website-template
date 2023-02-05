@@ -17,12 +17,12 @@ const Contact = () => {
         <BgTitle title='CONTACT' />
         <p className={styles.articleDescription}>
           {/* change your contact description */}
-          Looking for an awesome <b>Frontend Developer</b>?<br /> I&apos;m{' '}
+          Looking for an awesome <b>Frontend Developer</b>?<br></br> I&apos;m{' '}
           <b>available</b> and looking to mingle! Hit me up and let&apos;s see
           if we&apos;re a match. 💕
         </p>
         <ClipCopy copy='stevevang425@gmail.com' theme={themeStyle} />
-        <h2 className={styles.socialLinksTitle}>Connect with me 🤖</h2>
+        <p className={styles.socialLinksTitle}>Connect with me 🤖</p>
         <section className={styles.socialLinksContainer}>
           {/* add your social information in the projectData.tsx file */}
           {socialLinks.map((s, i) => {

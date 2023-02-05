@@ -32,31 +32,29 @@ const SwitchBtn = ({ onChange, color }: Props) => {
   };
 
   return (
-    <label aria-label='toggle theme'>
-      <Switch
-        onChange={handleChange}
-        checked={isChecked}
-        uncheckedIcon={
-          <FontAwesomeIcon
-            icon={faSun}
-            style={sunStyle}
-            color='black'
-            title='light-mode'
-          />
-        }
-        checkedIcon={
-          <FontAwesomeIcon
-            icon={faMoon}
-            style={moonStyle}
-            color='white'
-            title='dark-mode'
-          />
-        }
-        onColor={color}
-        offColor={color}
-        role='switch'
-      />
-    </label>
+    <Switch
+      onChange={handleChange}
+      checked={isChecked}
+      uncheckedIcon={
+        <FontAwesomeIcon
+          icon={faSun}
+          style={sunStyle}
+          color='black'
+          title='light-mode'
+        />
+      }
+      checkedIcon={
+        <FontAwesomeIcon
+          icon={faMoon}
+          style={moonStyle}
+          color='white'
+          title='dark-mode'
+        />
+      }
+      onColor={color}
+      offColor={color}
+      role='switch'
+    />
   );
 };
 
