@@ -79,14 +79,14 @@ const ClipCopy = ({ copy, theme }: Props) => {
         // onMouseLeave={handleMouseLeave}
         style={emailContainerStyle}
       >
-        <div ref={contentRef} style={contentStyle}>
+        <span ref={contentRef} style={contentStyle}>
           <span className={styles.email}>{copy}</span>
           <FontAwesomeIcon
             icon={faCopy}
             size='lg'
             className={styles.emailCopyIcon}
           />
-        </div>
+        </span>
         <span
           ref={fillbarRef}
           className={styles.fillbar}
