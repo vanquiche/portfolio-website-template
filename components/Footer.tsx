@@ -3,7 +3,7 @@ import styles from '@styles/Footer.module.sass';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} role='contentinfo'>
+    <footer className={styles.footer}>
       <span>
         Code &amp; design by <strong>Steve Vang</strong>
       </span>
