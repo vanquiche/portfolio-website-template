@@ -13,21 +13,16 @@ const Skills = () => {
   return (
     // change your title and section id
     <SectionCard id='skills' title='TOOLS' page='02'>
-      <article
-        className={styles.skillContainer}
-        style={{ position: 'relative' }}
-      >
+      <>
         <BgTitle title='TOOLS' />
-        {/* <p className={styles.articleDescription}>
-          Ipsum minim exercitation excepteur officia anim. Mollit anim cupidatat aliqua duis exercitation dolor ex irure voluptate veniam Lorem non. Sunt laboris voluptate et officia amet.
-        </p> */}
+
         <div className={styles.skillCardWrapper}>
           {/* add your skillcards here with their respective item. itemHeight represents the height of the container, required for proper position  */}
           <SkillCard items={skillcard_Languages} itemHeight={85} />
           <SkillCard items={skillcard_Styles} itemHeight={85} />
           <SkillCard items={skillcard_Frameworks} itemHeight={85} />
         </div>
-      </article>
+      </>
     </SectionCard>
   );
 };

@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     // change your title and section id
     <SectionCard id='contact' title='CONTACT' page='04'>
-      <article style={{ position: 'relative', paddingTop: '.5rem' }}>
+      <>
         <BgTitle title='CONTACT' />
         <p className={styles.articleDescription}>
           {/* change your contact description */}
@@ -39,7 +39,7 @@ const Contact = () => {
             );
           })}
         </section>
-      </article>
+      </>
     </SectionCard>
   );
 };

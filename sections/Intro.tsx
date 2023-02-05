@@ -16,16 +16,17 @@ const Intro = () => {
   return (
     // change your title and section id
     <SectionCard id='intro' title='ABOUT' page='01'>
-      <article
-        className={styles.introContainer}
-        style={{ position: 'relative' }}
-      >
+      <>
         <BgTitle title='ABOUT' />
         <div>
           <p>
             {/* add your text here */}
-            <span className={styles.hello}>Hello! My name is</span>
-            <span className={styles.myName} style={{fontFamily: 'Archivo Black, sans-serif'}}>STEVE VANG</span>
+            <span
+              className={styles.myName}
+              style={{ fontFamily: 'Archivo Black, sans-serif' }}
+            >
+              STEVE VANG
+            </span>
             {/* <br /> */}
             I&apos;m a<b> Frontend Developer </b>
             and I build cool things for the web. <b>Javascript</b>, <b>React</b>
@@ -37,7 +38,7 @@ const Intro = () => {
             <b style={{ textDecoration: 'underline' }}>chat </b>💬
           </a>{' '}
         </div>
-      </article>
+      </>
     </SectionCard>
   );
 };
