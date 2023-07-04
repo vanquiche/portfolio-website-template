@@ -6,6 +6,7 @@ body {
   line-height: 1.65rem;
   overflow-x: hidden;
   font-size: 1rem;
+  scroll-behavior: smooth !important;
 }
 
 * {
