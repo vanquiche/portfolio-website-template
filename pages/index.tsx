@@ -37,6 +37,10 @@ const Home: NextPage = () => {
               content='Personal Portfolio Website by Steve Vang'
             />
             <link rel='icon' href='/favicon.ico' />
+            <script
+              src='https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js'
+              async
+            ></script>
           </Head>
           <Navbar links={links} />
 
